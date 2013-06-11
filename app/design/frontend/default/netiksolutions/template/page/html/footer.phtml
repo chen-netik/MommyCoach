@@ -1,0 +1,49 @@
+<?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magentocommerce.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magentocommerce.com for more information.
+ *
+ * @category    design
+ * @package     base_default
+ * @copyright   Copyright (c) 2012 Magento Inc. (http://www.magentocommerce.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+?>
+<div class="footer-container">
+    <div class="footer">
+        <?php echo $this->getChildHtml() ?>
+        <div class="footer-bottom-div">
+        	<div class="footer-bottom-left-div bottom-section">
+        		<p>SHARING IS CARING</p>
+        		<ul class="social-media-ul">
+        			<li id="facebook-li"><a href=""><img src="<?php echo  $this->getSkinUrl('')?>images/facebook-logo.jpg"/></a></li>
+        			<li id="twitter-li"><a href=""><img src="<?php echo  $this->getSkinUrl('')?>images/twitter-logo.jpg"/></a></li>
+        			<li id="email-li"><a href=""><img src="<?php echo  $this->getSkinUrl('')?>images/email-logo.jpg"/></a></li>
+        		</ul>
+        	</div>
+        	<div class="footer-bottom-middle-div bottom-section">
+        		<img src="<?php echo  $this->getSkinUrl('')?>images/logo-black.jpg" />
+        		<address><?php echo $this->getCopyright() ?></address>
+        	</div>
+        	<div class="footer-bottom-right-div bottom-section">
+        		<div class="fb-like" data-href="https://www.facebook.com/pages/Mommy-Coach/136446989851012" data-send="false" data-layout="box_count" data-width="450" data-show-faces="true"></div>
+        	</div>
+        	
+        </div>
+    </div>
+</div>

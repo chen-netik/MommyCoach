@@ -1,0 +1,32 @@
+.footer {
+	width: 1200px; 
+}
+.footer-bottom-div {
+	width: 1200px; 
+	clear: both; 
+}
+.footer-bottom-div p {
+	color: #FFF; 
+}
+.footer-bottom-div div.bottom-section {
+	float: left; 
+}
+.footer-bottom-left-div, .footer-bottom-middle-div, .footer-bottom-right-div{
+	width: 350px;
+}
+.footer li {
+	background-image: none; 
+}
+.footer-top-div {
+	width: 1200px;
+	height: 300px;
+	clear: both;
+	margin-top: 70px;
+}
+.footer-top-div div.footer-top-section {
+	width: 290px;
+	float: left; 
+}
+.footer .footer-top-div li {
+	display: block;
+}
