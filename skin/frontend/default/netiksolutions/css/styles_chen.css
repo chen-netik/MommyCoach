@@ -1,0 +1,48 @@
+.header-container {
+	border: none;
+	background-color: #00DCC5;
+	background-image: none;
+}
+.header .links a {
+	color: #FFF;
+	text-transform: uppercase;
+	text-decoration: none;
+	
+}
+.header .links li {
+
+}
+button.red-btn span {
+	background-color: #FF524D;
+	border-radius: 15px;
+	border:none;
+	padding: 5px 10px;
+}
+.header-container {
+	height: 60px;
+}
+.header {
+	height: 40px;
+}
+.header h1.logo {
+	margin: -5px;
+}
+.header .quick-access {
+	padding-top: 0px;
+}
+.header .links {
+	padding-top: 20px;
+}
+.footer-container {
+	border-top: 0px;
+}
+.main {
+	background: none;
+}
+.main-container {
+	background-image: none;
+}
+.footer-container {
+	background-color: #313232;
+	min-height: 400px;
+}
