@@ -47,3 +47,23 @@ button.red-btn span {
 	background-color: #303030;
 	min-height: 550px;
 }
+.mt-fb-block .block-title {
+	background-image: none;
+	border: none; 
+}
+.mt-fb-block .block-title strong {
+	color: #82CECA; 
+}
+.mt-fb-block {
+	border: 0px;
+}
+.main-container {
+	background-color: #FFF;
+}
+div.mt-ft-block {
+	width: 250px; 
+	float: right;
+}
+ul.social-media-ul li {
+	padding: 0px;
+}

@@ -1,0 +1,355 @@
+<?xml version="1.0"?>
+<!--
+/******************************************************
+ * @package MT Facebook module for Magento 1.4.x.x and Magento 1.5.x.x
+ * @version 1.5.0.1
+ * @author http://www.magentheme.com
+ * @copyright (C) 2011- MagenTheme.Com
+ * @license PHP files are GNU/GPL
+*******************************************************/
+-->
+<config>
+    <tabs>
+	<netiksolutions translate="label" module="mtfacebook">
+	    <label>Netiksolutions</label>
+	    <sort_order>205</sort_order>
+	</netiksolutions>
+    </tabs>
+    <sections>
+	<mtfacebook translate="label" module="mtfacebook">
+	    <label>FaceBook</label>
+	    <tab>netiksolutions</tab>
+	    <sort_order>130</sort_order>
+	    <show_in_default>1</show_in_default>
+	    <show_in_website>1</show_in_website>
+	    <show_in_store>1</show_in_store>
+	    <groups>
+		<mtfacebook_config translate="label">
+		    <label>FaceBook Config:</label>
+		    <frontend_type>text</frontend_type>
+		    <sort_order>1</sort_order>
+		    <show_in_default>1</show_in_default>
+		    <show_in_website>1</show_in_website>
+		    <show_in_store>1</show_in_store>
+		    <fields>
+			<enabled translate="label">
+			    <label>Enabled:</label>
+			    <frontend_type>select</frontend_type>
+			    <source_model>adminhtml/system_config_source_yesno</source_model>
+			    <sort_order>0</sort_order>
+			    <show_in_default>1</show_in_default>
+			    <show_in_website>1</show_in_website>
+			    <show_in_store>1</show_in_store>
+			</enabled>	
+			<title translate="label">
+			    <label>Title:</label>
+			    <frontend_type>text</frontend_type>
+			    <sort_order>1</sort_order>
+			    <show_in_default>1</show_in_default>
+			    <show_in_website>1</show_in_website>
+			    <show_in_store>1</show_in_store>
+			</title>	
+			<fb_option>
+			    <label>FB Option:</label>
+			    <frontend_type>select</frontend_type>
+			    <source_model>mtfacebook/config_fboption</source_model>
+			    <sort_order>2</sort_order>
+			    <show_in_default>1</show_in_default>
+			    <show_in_store>1</show_in_store>
+			    <show_in_website>1</show_in_website>
+			</fb_option>
+			<lb_page_id translate="label">
+			    <label>Page ID: </label>
+			    <frontend_type>text</frontend_type>
+			    <comment>The ID of the Facebook Page for this Like Box</comment>
+			    <sort_order>3</sort_order>
+			    <show_in_default>1</show_in_default>
+			    <show_in_website>1</show_in_website>
+			    <show_in_store>1</show_in_store>
+			    <depends><fb_option>fb_like_box</fb_option></depends>
+			</lb_page_id>  
+			<lb_width>
+			    <label>Width:</label>
+			    <frontend_type>text</frontend_type>
+			    <comment>The width of the plugin in pixels.</comment>
+			    <sort_order>4</sort_order>
+			    <show_in_default>1</show_in_default>
+			    <show_in_website>1</show_in_website>
+			    <show_in_store>1</show_in_store>
+			    <validate>validate-greater-than-zero</validate>
+			    <depends><fb_option>fb_like_box</fb_option></depends>
+			</lb_width>
+			<lb_height>
+			    <label>Height:</label>
+			    <frontend_type>text</frontend_type>                    
+			    <comment>The height of the plugin in pixels.</comment>
+			    <sort_order>5</sort_order>
+			    <show_in_default>1</show_in_default>
+			    <show_in_website>1</show_in_website>
+			    <show_in_store>1</show_in_store>
+			    <validate>validate-greater-than-zero</validate>
+			    <depends><fb_option>fb_like_box</fb_option></depends>
+			</lb_height>
+			<lb_number_fan>
+			    <label>Number of Fan:</label>
+			    <frontend_type>text</frontend_type>
+			    <comment>Show a sample of this many users who have liked this page.</comment>
+			    <sort_order>6</sort_order>
+			    <show_in_default>1</show_in_default>
+			    <show_in_store>1</show_in_store>
+			    <show_in_website>1</show_in_website>
+			    <validate>validate-greater-than-zero</validate>
+			    <depends><fb_option>fb_like_box</fb_option></depends>
+			</lb_number_fan>
+			<lb_stream>
+			    <label>Show Stream:</label>
+			    <frontend_type>select</frontend_type>
+			    <comment>Show the profile stream for public profile.</comment>
+			    <source_model>adminhtml/system_config_source_yesno</source_model>
+			    <sort_order>7</sort_order>
+			    <show_in_default>1</show_in_default>
+			    <show_in_website>1</show_in_website>
+			    <show_in_store>1</show_in_store>
+			    <depends><fb_option>fb_like_box</fb_option></depends>
+			</lb_stream>
+			<lb_header>
+			    <label>Show header:</label>
+			    <frontend_type>select</frontend_type>
+			    <comment>Show the Find Us on facebook bar at top. Only shown when either stream or connections are present.</comment>
+			    <source_model>adminhtml/system_config_source_yesno</source_model>
+			    <sort_order>8</sort_order>
+			    <show_in_default>1</show_in_default>
+			    <show_in_store>1</show_in_store>
+			    <show_in_store>1</show_in_store>
+			    <depends><fb_option>fb_like_box</fb_option></depends>
+			</lb_header>
+			<lb_css>
+			    <label>Path to css file:</label>
+			    <frontend_type>file</frontend_type>
+			    <backend_model>adminhtml/system_config_backend_file</backend_model>
+			    <upload_dir config="system/filesystem/media">mtfacebook</upload_dir>
+			    <sort_order>9</sort_order>
+			    <show_in_default>1</show_in_default>
+			    <show_in_store>1</show_in_store>
+			    <show_in_website>1</show_in_website>
+			    <depends><fb_option>fb_like_box</fb_option></depends>
+			</lb_css>
+			<af_domain>
+			    <label>Domain:</label>
+			    <frontend_type>text</frontend_type>
+			    <comment>The domain to show activity for.</comment>
+			    <sort_order>9</sort_order>
+			    <show_in_default>1</show_in_default>
+			    <show_in_store>1</show_in_store>
+			    <show_in_website>1</show_in_website>
+			    <depends><fb_option>fb_activity_feed</fb_option></depends>
+			</af_domain>
+			<af_width>
+			    <label>Width:</label>
+			    <frontend_type>text</frontend_type>                      
+			    <comment>The width of the plugin in pixels.</comment>
+			    <sort_order>10</sort_order>
+			    <show_in_default>1</show_in_default>
+			    <show_in_website>1</show_in_website>
+			    <show_in_store>1</show_in_store>
+			    <validate>validate-greater-than-zero</validate>
+			    <depends><fb_option>fb_activity_feed</fb_option></depends>
+			</af_width>
+			<af_height>
+			    <label>Height:</label>
+			    <frontend_type>text</frontend_type>
+			    <comment>The height of the plugin in pixels.</comment>
+			    <sort_order>11</sort_order>
+			    <show_in_default>1</show_in_default>
+			    <show_in_website>1</show_in_website>
+			    <show_in_store>1</show_in_store>
+			    <validate>validate-greater-than-zero</validate>
+			    <depends><fb_option>fb_activity_feed</fb_option></depends>
+			</af_height>
+			<af_header>
+			    <label>Show header:</label>
+			    <frontend_type>select</frontend_type>
+			    <comment>Show the Facebook header on the plugin.</comment>
+			    <source_model>adminhtml/system_config_source_yesno</source_model>
+			    <sort_order>12</sort_order>
+			    <show_in_default>1</show_in_default>
+			    <show_in_website>1</show_in_website>
+			    <show_in_store>1</show_in_store>
+			    <depends><fb_option>fb_activity_feed</fb_option></depends>
+			</af_header>
+			<af_color_scheme>
+			    <label>Color Scheme:</label>
+			    <frontend_type>select</frontend_type>
+			    <comment>The color scheme of the plugin.</comment>
+			    <source_model>mtfacebook/config_colorscheme</source_model>
+			    <sort_order>13</sort_order>
+			    <show_in_default>1</show_in_default>
+			    <show_in_website>1</show_in_website>
+			    <show_in_store>1</show_in_store>
+			    <depends><fb_option>fb_activity_feed</fb_option></depends>
+			</af_color_scheme>
+			<af_font>
+			    <label>Font:</label>
+			    <frontend_type>select</frontend_type>
+			    <comment>The font of the plugin.</comment>
+			    <source_model>mtfacebook/config_font</source_model>
+			    <sort_order>14</sort_order>
+			    <show_in_default>1</show_in_default>
+			    <show_in_website>1</show_in_website>
+			    <show_in_store>1</show_in_store>
+			    <depends><fb_option>fb_activity_feed</fb_option></depends>
+			</af_font>
+			<af_border>
+			    <label>Border color:</label>
+			    <frontend_type>text</frontend_type>
+			    <comment>The border color of the plugin.</comment>
+			    <sort_order>15</sort_order>
+			    <show_in_default>1</show_in_default>
+			    <show_in_website>1</show_in_website>
+			    <show_in_store>1</show_in_store>
+			    <depends><fb_option>fb_activity_feed</fb_option></depends>
+			</af_border>
+			<af_recommendations>
+			    <label>Recommendations:</label>
+			    <frontend_type>text</frontend_type>
+			    <comment>Show recommendations.</comment>
+			    <sort_order>16</sort_order>
+			    <show_in_default>1</show_in_default>
+			    <show_in_website>1</show_in_website>
+			    <show_in_store>1</show_in_store>
+			    <depends><fb_option>fb_activity_feed</fb_option></depends>
+			</af_recommendations>     
+			<ls_app_id>
+			    <label>App ID:</label>
+			    <frontend_type>text</frontend_type>
+			    <comment>Your facebook application ID or API key.</comment>
+			    <sort_order>17</sort_order>
+			    <show_in_default>1</show_in_default>
+			    <show_in_website>1</show_in_website>
+			    <show_in_store>1</show_in_store>
+			    <depends><fb_option>fb_live_stream</fb_option></depends>
+			</ls_app_id>
+			<ls_width>
+			    <label>Width:</label>
+			    <frontend_type>text</frontend_type>
+			    <comment>The width of the plugin in pixels.</comment>
+			    <sort_order>18</sort_order>
+			    <show_in_default>1</show_in_default>
+			    <show_in_website>1</show_in_website>
+			    <show_in_store>1</show_in_store>
+			    <validate>validate-greater-than-zero</validate>
+			    <depends><fb_option>fb_live_stream</fb_option></depends>
+			</ls_width>
+			<ls_height>
+			    <label>Height:</label>
+			    <frontend_type>text</frontend_type>
+			    <comment>The height of the plugin in pixels.</comment>
+			    <sort_order>19</sort_order>
+			    <show_in_default>1</show_in_default>
+			    <show_in_store>1</show_in_store>
+			    <show_in_website>1</show_in_website>
+			    <validate>validate-greater-than-zero</validate>
+			    <depends><fb_option>fb_live_stream</fb_option></depends>
+			</ls_height>
+			<ls_xid>
+			    <label>XID:</label>
+			    <frontend_type>text</frontend_type>
+			    <comment>If you have multiple live stream boxes on the same page, specify a unique for `xid` each.</comment>
+			    <sort_order>28</sort_order>
+			    <show_in_default>1</show_in_default>
+			    <show_in_website>1</show_in_website>
+			    <show_in_store>1</show_in_store>
+			    <depends><fb_option>fb_live_stream</fb_option></depends>
+			</ls_xid>
+			<r_domain>
+			    <label>Domain:</label>
+			    <frontend_type>text</frontend_type>
+			    <comment>The domain for which to show recommendations.</comment>
+			    <sort_order>21</sort_order>
+			    <show_in_default>1</show_in_default>
+			    <show_in_website>1</show_in_website>
+			    <show_in_store>1</show_in_store>
+			    <depends><fb_option>fb_recommandations</fb_option></depends>
+			</r_domain>
+			<r_width>
+			    <label>Width:</label>
+			    <frontend_type>text</frontend_type>                      
+			    <comment>The width of the plugin in pixels.</comment>
+			    <sort_order>22</sort_order>
+			    <show_in_default>1</show_in_default>
+			    <show_in_website>1</show_in_website>
+			    <show_in_store>1</show_in_store>
+			    <validate>validate-greater-than-zero</validate>
+			    <depends><fb_option>fb_recommandations</fb_option></depends>
+			</r_width>
+			<r_height>
+			    <label>Height:</label>
+			    <frontend_type>text</frontend_type>
+			    <comment>The height of the plugin in pixels.</comment>
+			    <sort_order>23</sort_order>
+			    <show_in_default>1</show_in_default>
+			    <show_in_website>1</show_in_website>
+			    <show_in_store>1</show_in_store>
+			    <validate>validate-greater-than-zero</validate>
+			    <depends><fb_option>fb_recommandations</fb_option></depends>
+			</r_height>
+			<r_header>
+			    <label>Show header:</label>
+			    <frontend_type>select</frontend_type>
+			    <comment>Show the Facebook header on the plugin.</comment>
+			    <source_model>adminhtml/system_config_source_yesno</source_model>
+			    <sort_order>24</sort_order>
+			    <show_in_default>1</show_in_default>
+			    <show_in_website>1</show_in_website>
+			    <show_in_store>1</show_in_store>
+			    <depends><fb_option>fb_recommandations</fb_option></depends>
+			</r_header>
+			<r_color_scheme>
+			    <label>Color Scheme:</label>
+			    <frontend_type>select</frontend_type>
+			    <comment>The color scheme of the plugin.</comment>
+			    <source_model>mtfacebook/config_colorscheme</source_model>
+			    <sort_order>25</sort_order>
+			    <show_in_default>1</show_in_default>
+			    <show_in_store>1</show_in_store>
+			    <show_in_website>1</show_in_website>
+			    <depends><fb_option>fb_recommandations</fb_option></depends>
+			</r_color_scheme>
+			<r_font>
+			    <label>Font:</label>
+			    <frontend_type>select</frontend_type>
+			    <comment>The font of the plugin.</comment>
+			    <source_model>mtfacebook/config_font</source_model>
+			    <sort_order>26</sort_order>
+			    <show_in_default>1</show_in_default>
+			    <show_in_website>1</show_in_website>
+			    <show_in_store>1</show_in_store>
+			    <depends><fb_option>fb_recommandations</fb_option></depends>
+			</r_font>
+			<r_border>
+			    <label>Border color:</label>
+			    <frontend_type>text</frontend_type>
+			    <comment>The border color of the plugin.</comment>
+			    <sort_order>27</sort_order>
+			    <show_in_default>1</show_in_default>
+			    <show_in_website>1</show_in_website>
+			    <show_in_store>1</show_in_store>
+			    <depends><fb_option>fb_recommandations</fb_option></depends>
+			</r_border>
+		    </fields>
+		</mtfacebook_config>		
+		<!--info translate="label">
+		    <label>Info</label>
+		    <frontend_type>text</frontend_type>
+		    <frontend_model>mtfacebook/info</frontend_model>
+		    <sort_order>150</sort_order>
+		    <show_in_default>1</show_in_default>
+		    <show_in_website>1</show_in_website>
+		    <show_in_store>1</show_in_store>                    
+		</info-->	
+	    </groups>
+	</mtfacebook>
+    </sections>
+</config>
+
+
