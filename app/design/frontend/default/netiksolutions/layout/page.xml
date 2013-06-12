@@ -63,6 +63,8 @@ Default layout, loads most of the pages
 				<action method="addJs"><script>jqueryui/jquery.ui.widget.js</script></action>
 				<action method="addJs"><script>jqueryui/jquery.ui.button.js</script></action>
 				<action method="addJs"><script>jqueryui/jquery.ui.spinner.js</script></action>
+				<action method="addJs"><script>slideshow/jquery.cycle.all.2.74.js</script></action>
+				
                 <action method="addItem"><type>skin_css</type><name>css/styles-ie.css</name><params/><if>lt IE 8</if></action>
                 <action method="addCss"><stylesheet>css/widgets.css</stylesheet></action>
                 <action method="addCss"><stylesheet>css/print.css</stylesheet><params>media="print"</params></action>
