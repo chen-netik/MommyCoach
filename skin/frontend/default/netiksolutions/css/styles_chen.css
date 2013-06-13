@@ -130,6 +130,7 @@ div.home-landing #nav {
 .cms-home .main{
 	width: 100%;
 	padding: 0px; 
+	clear: both; 
 }
 .header .logo  img{
 	width: 100px; 
