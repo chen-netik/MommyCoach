@@ -230,6 +230,8 @@ div.home-landing #nav {
 }
 .coach-description p {
 	margin: 0 auto; 
+	font-size: 15px; 
+	color: #BBB;
 }
 .coach-description span.blue-span {
 	color: #00CCF1; /*blue*/
@@ -251,7 +253,11 @@ div.home-landing #nav {
     padding-top: 80px;
 }
 .rewards-header p {
-	margin-top: 15px;
+color: #BBBBBB;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    line-height: 27px;
+    margin-top: 15px;
     width: 350px;
 }
 #rewards-id {
