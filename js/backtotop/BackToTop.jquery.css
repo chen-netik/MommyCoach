@@ -1,0 +1,23 @@
+#BackToTop {
+	float: left;
+	display:none;
+	position:fixed;
+	bottom:20px;
+	right:90px;
+    background-image: url("back-to-top-btn.png");
+	height: 64px;
+	width: 45px;
+	text-decoration: none; 
+	
+}
+
+#BackToTop span
+{
+    
+    display: block;
+	color: transparent;
+	text-decoration: none; 
+    cursor: pointer;
+	
+	
+}
