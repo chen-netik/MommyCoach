@@ -38,6 +38,7 @@ button.red-btn span {
 }
 .header h1.logo {
 	margin: -5px;
+	height:50px;
 }
 .header .quick-access {
 	padding-top: 0px;
@@ -131,7 +132,119 @@ div.home-landing #nav {
 	width: 100%;
 	padding: 0px; 
 	clear: both; 
+	text-align: center;
 }
 .header .logo  img{
 	width: 100px; 
+}
+#how-it-works-id {
+	height: 400px; 
+	margin-top:50px;
+	margin-bottom: 50px;
+ 
+}
+#how-it-works-id, #various-coaches-id, #happy-moments-id, #rewards-id {
+	left: 50%;
+    margin-left: -600px;
+    position: relative;
+    width: 1200px;
+}
+#live-coaching-id {
+	left: 50%;
+    margin-left: -500px;
+    position: relative;
+    width: 1000px;
+}
+.how-it-works-header {
+	margin-bottom: 80px;
+	text-align: left;
+	 padding-left: 50px;
+}
+.how-it-works-content img {
+	margin: 0 50px; 
+}
+#live-coaching-wrapper {
+	background-image: url("../images/happy-moment-bg.png");
+	height: 400px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    padding-bottom: 100px;
+    padding-top: 100px;
+	
+}
+.live-coaching-left {
+	width: 400px;
+	float: left; 
+}
+.live-coaching-right {
+	width: 399px;
+	float: right; 
+}
+.play-button {
+	margin-top: 90px;
+}
+.coach-wrapper {
+	width: 200px;
+	float: left;
+	margin: 0 50px;
+}
+.various-coaches-content {
+	clear: both; 
+}
+#various-coaches-id {
+	height: 600px;
+    padding-bottom: 100px;
+    padding-top: 50px;
+}
+.various-coaches-header {
+	text-align: left; 
+	padding-left: 50px;
+    width: 500px;
+	margin-bottom: 80px;
+}
+.various-coaches-header img {
+	margin-bottom: 15px;
+}
+.coach-description {
+	margin-top: 21px;
+	
+}
+.coach-description p {
+	margin: 0 auto; 
+}
+.coach-description span.blue-span {
+	color: #00CCF1; /*blue*/
+	font-weight: bold; 
+}
+.various-coaches-content {
+	height: 350px;
+}
+.happy-moments-header, .rewards-header {
+	padding-left: 50px;
+	text-align: left; 
+	margin-bottom: 80px;
+}
+#happy-moments-wrapper {
+	background-image: url("../images/happy-moment-bg.png");
+	margin-bottom: 50px;
+    margin-top: 0;
+    padding-bottom: 80px;
+    padding-top: 80px;
+}
+.rewards-header p {
+	margin-top: 15px;
+    width: 350px;
+}
+#rewards-id {
+	height: 400px; 
+}
+.logos {
+	width: 1100px;
+	
+}
+.logos img {
+	margin: 0 50px; 
+}
+.header .logo {
+	margin-top: -2px; 
 }
