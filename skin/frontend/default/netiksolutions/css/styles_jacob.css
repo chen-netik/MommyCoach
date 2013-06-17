@@ -18,7 +18,7 @@
 	background-image: none; 
 }
 .footer-top-div {
-	width: 900px;
+	width: 1200px;
 	height: 360px;
 	clear: both;
 	margin-top: 70px;
@@ -27,12 +27,15 @@
 .footer-top-div div.footer-top-section {
 	width: 190px;
 	float: left; 
-	padding-left: 110px;
+	margin: 25px 50px; 
 }
 .footer .footer-top-div li {
 	display: block;
 	text-align: left;
 	margin-bottom: 6px;
+}
+.footer .footer-bottom-div li  {
+	float: left;
 }
 .footer h2 {
 	font-size: 16px;

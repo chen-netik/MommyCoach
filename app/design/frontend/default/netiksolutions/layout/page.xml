@@ -55,6 +55,7 @@ Default layout, loads most of the pages
 
                 <action method="addCss"><stylesheet>css/styles.css</stylesheet></action>
 				<action method="addCss"><stylesheet>css/styles_chen.css</stylesheet></action>
+				<action method="addCss"><stylesheet>css/twitter.css</stylesheet></action>
 				<action method="addCss"><stylesheet>css/styles_jacob.css</stylesheet></action>
 				<action method="addItem"><type>js_css</type><name>jqueryui/jquery.ui.all.css</name><params/></action>
 			
@@ -64,6 +65,7 @@ Default layout, loads most of the pages
 				<action method="addJs"><script>jqueryui/jquery.ui.button.js</script></action>
 				<action method="addJs"><script>jqueryui/jquery.ui.spinner.js</script></action>
 				<action method="addJs"><script>slideshow/jquery.cycle.all.2.74.js</script></action>
+				<action method="addJs"><script>twitter/customize-twitter-1.1.min.js</script></action>
 				
                 <action method="addItem"><type>skin_css</type><name>css/styles-ie.css</name><params/><if>lt IE 8</if></action>
                 <action method="addCss"><stylesheet>css/widgets.css</stylesheet></action>
@@ -115,6 +117,7 @@ Default layout, loads most of the pages
                     <action method="setElementClass"><value>bottom-container</value></action>
                 </block>
                 <block type="page/switch" name="store_switcher" as="store_switcher" template="page/switch/stores.phtml"/>
+				<block type="core/template" name="latest.tweet" as="magento_tweet" template="page/html/magento_tweet.phtml"/>
                 <!--block type="page/template_links" name="footer_links" as="footer_links" template="page/template/links.phtml"/-->
             </block>
 

@@ -15,6 +15,10 @@
 	font-family: 'Verdana';
 	src: url('fonts/verdana.ttf') format('truetype');
 }
+@font-face {
+	font-family: 'Helveticaneue Thin';
+	src: url('fonts/helvetica_neue_lt_com/HelveticaNeueLTCom-Lt.ttf') format('truetype');
+}
 
 
 .header-container {
@@ -244,6 +248,7 @@ div.home-landing #nav {
 	padding-left: 50px;
 	text-align: left; 
 	margin-bottom: 80px;
+	width: 415px;
 }
 #happy-moments-wrapper {
 	background-image: url("../images/happy-moment-bg.png");
@@ -252,13 +257,15 @@ div.home-landing #nav {
     padding-bottom: 80px;
     padding-top: 80px;
 }
-.rewards-header p {
-color: #BBBBBB;
-    font-size: 14px;
+p.header-description {
+    font-size: 15px;
     letter-spacing: 0.5px;
     line-height: 27px;
     margin-top: 15px;
-    width: 350px;
+    width: 325px;
+	word-spacing: 6px; 
+	color: #C2C2C2;
+	margin-top: 0px;
 }
 #rewards-id {
 	height: 400px; 
@@ -272,4 +279,27 @@ color: #BBBBBB;
 }
 .header .logo {
 	margin-top: -2px; 
+}
+.small-headline {
+	font-family: 'Conv_UniversLTStd BoldCn';
+	font-size: 18px;
+	line-height: 13px;
+	text-transform: uppercase;
+	color: #4AC3EB;
+
+
+}
+.large-headline {
+	color: #303030;
+	margin: 0;
+	padding: 0px 0px 6px 0px;
+	font-size: 43PX;
+	line-height: 37PX;
+	letter-spacing: -2px;
+	/*font-family: 'Helveticaneue';*/
+		font-family: 'Helveticaneue Thin';
+}
+.live-coaching-header {
+	text-align: left;
+	padding-left: 50px; 
 }
