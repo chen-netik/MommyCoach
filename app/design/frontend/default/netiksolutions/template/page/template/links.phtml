@@ -32,26 +32,41 @@
 <?php $_links = $this->getLinks(); ?>
 <?php if(count($_links)>0): ?>
 <ul class="links"<?php if($this->getName()): ?> id="<?php echo $this->getName() ?>"<?php endif;?>>
-
-    <?php foreach($_links as $_link): ?>
-        <?php if ($_link instanceof Mage_Core_Block_Abstract):?>
-            <?php echo $_link->toHtml() ?>
-        <?php else: ?>
-            <li<?php if($_link->getIsFirst()||$_link->getIsLast()): ?> class="<?php if($_link->getIsFirst()): ?>first<?php endif; ?><?php if($_link->getIsLast()): ?> last<?php endif; ?>"<?php endif; ?> <?php echo $_link->getLiParams() ?>><?php echo $_link->getBeforeText() ?><a href="<?php echo $_link->getUrl() ?>" title="<?php echo $_link->getTitle() ?>" <?php echo $_link->getAParams() ?>><?php echo $_link->getLabel() ?></a><?php echo $_link->getAfterText() ?></li>
-        <?php endif;?>
-    <?php endforeach; ?>
+<?php 
+/**
+ * //Column all magento default: using customize links: 
+ * Chen Liang 
+ * Netik 
+ * 
+ *  <?php foreach($_links as $_link): ?>
+ *       <?php if ($_link instanceof Mage_Core_Block_Abstract):?>
+ *          <?php echo $_link->toHtml() ?>
+ *       <?php else: ?>
+ *           <li<?php if($_link->getIsFirst()||$_link->getIsLast()): ?> class="<?php if($_link->getIsFirst()): ?>first<?php endif; ?><?php if($_link->getIsLast()): ?> last<?php endif; ?>"<?php endif; ?> <?php echo $_link->getLiParams() ?>><?php echo $_link->getBeforeText() ?><a href="<?php echo $_link->getUrl() ?>" title="<?php echo $_link->getTitle() ?>" <?php echo $_link->getAParams() ?>><?php echo $_link->getLabel() ?></a><?php echo $_link->getAfterText() ?></li>
+ *       <?php endif;?>
+ *  <?php endforeach; ?>
+    
+* */?>  
      <li class=""><a class="login" title="Log In">Log In</a></li>
      <li class=""><a class="signup" title="Sign Up">SIGN UP</a></li>
-     <li class="last"><a title="Help">HELP</a></li>
+     <li class="last"><a href="help" title="Help">HELP</a></li>
+     <?php if ($this->helper('customer')->isLoggedIn() ):?>
+     <?php else:?>
      <li style="margin-top: -10px;">
 		 <button title="INVITE FRIENDS" class="button red-btn" value="INVITE FRIENDS">
 		 	<span><span><?php echo $this->__('INVITE FRIENDS') ?></span></span>
 		 </button>
 	 </li>
+	 <?php endif;?>
 </ul>
 <?php endif; ?>
 
 <script type="text/javascript">
+//Chen Liang 
+//Netiksolutions 
+// show login content when click login
+// show sign up content when click sign up 
+
 jQuery(document).ready(function(){
   jQuery("a.signup").click(function(){
   // alert("The paragraph was clicked.");

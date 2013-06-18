@@ -340,6 +340,9 @@ p.header-description {
 	width: 200px !important; 
 	
 } 
+.footer-top-div .footer-top-div-4 {
+	margin-left: 100px !important; 
+}
 .footer address {
 	font-family: 'Conv_UniversLTStd BoldCn';
 	color: #FFF;
@@ -349,4 +352,7 @@ p.header-description {
 .footer-bottom-middle-div img {
 	margin-bottom: 30px;
 	width: 135px; 
+}
+.header .form-search {
+	background-image: none; 
 }

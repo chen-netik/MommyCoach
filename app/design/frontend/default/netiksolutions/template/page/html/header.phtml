@@ -35,7 +35,13 @@
         <a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo"><strong><?php echo $this->getLogoAlt() ?></strong><img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" /></a>
         <?php endif?>
         <div class="quick-access">
-            <?php //echo $this->getChildHtml('topSearch') ?>
+            <?php 
+            if ($this->helper('customer')->isLoggedIn() ) {
+            	echo $this->getChildHtml('topSearch');
+            } else { 	
+            	
+            }
+            ?>
             <p class="welcome-msg"><?php echo $this->getWelcome() ?> <?php echo $this->getAdditionalHtml() ?></p>
             
             <?php echo $this->getChildHtml('topLinks') ?>
