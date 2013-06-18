@@ -1,0 +1,135 @@
+<?xml version="1.0"?>
+<!--
+/******************************************************
+ * @package MT Facebook module for Magento 1.4.x.x and Magento 1.5.x.x
+ * @version 1.5.0.1
+ * @author http://www.magentheme.com
+ * @copyright (C) 2011- MagenTheme.Com
+ * @license PHP files are GNU/GPL
+*******************************************************/
+-->
+<config>
+    <modules>
+        <Netiksolutions_Mtfacebook>
+            <version>1.5.0.1</version>
+        </Netiksolutions_Mtfacebook>
+    </modules>
+    <frontend>
+        <routers>
+            <mtfacebook>
+                <use>standard</use>
+                <args>
+                    <module>Netiksolutions_Mtfacebook</module>
+                    <frontName>mtfacebook</frontName>
+                </args>
+            </mtfacebook>
+        </routers>
+        <layout>
+            <updates>
+                <mtfacebook>
+                    <file>mtfacebook.xml</file>
+                </mtfacebook>
+            </updates>
+        </layout>
+    </frontend>
+    <admin>
+        <routers>
+	    <mtfacebook>
+		<use>admin</use>
+		<args>
+		    <module>Netiksolutions_Mtfacebook</module>
+		    <frontName>mtfacebook</frontName>
+		</args>
+	    </mtfacebook>
+        </routers>
+    </admin>
+    <adminhtml>
+	<acl>
+	    <resources>
+		<all>
+		    <title>Allow Everything</title>
+		</all>
+		<admin>
+		    <children>
+			<Netiksolutions_Mtfacebook>
+			    <title>Mtfacebook Module</title>
+			    <sort_order>10</sort_order>
+			</Netiksolutions_Mtfacebook>
+		    </children>
+		</admin>
+	    </resources>
+	</acl>
+	<layout>
+	    <updates>
+		<mtfacebook>
+		    <file>mtfacebook.xml</file>
+		</mtfacebook>
+	    </updates>
+	</layout>
+    </adminhtml>   
+    <global>
+        <models>
+            <mtfacebook>
+                <class>Netiksolutions_Mtfacebook_Model</class>
+            </mtfacebook>
+        </models>
+        <resources>
+            <mtfacebook_setup>
+                <setup>
+                    <module>Netiksolutions_Mtfacebook</module>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </mtfacebook_setup>
+            <mtfacebook_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </mtfacebook_write>
+            <mtfacebook_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </mtfacebook_read>
+        </resources>
+        <blocks>
+            <mtfacebook>
+                <class>Netiksolutions_Mtfacebook_Block</class>
+            </mtfacebook>
+        </blocks>
+        <helpers>
+            <mtfacebook>
+                <class>Netiksolutions_Mtfacebook_Helper</class>
+            </mtfacebook>
+        </helpers>
+    </global>
+    <default>
+	<mtfacebook>
+	    <mtfacebook_config>
+		<enabled>1</enabled>
+		<title>Facebook</title>
+		<fb_option>fb_like_box</fb_option>
+		<lb_page_id>101188143276788</lb_page_id>
+		<lb_width>193</lb_width>
+		<lb_height>395</lb_height>
+		<lb_number_fan>12</lb_number_fan>
+		<lb_stream>0</lb_stream>
+		<lb_header>1</lb_header>
+		<af_domain>http://www.joomlavision.com/</af_domain>
+		<af_width>193</af_width>
+		<af_height>600</af_height>
+		<af_header>1</af_header>
+		<af_color_scheme>light</af_color_scheme>
+		<ls_app_id>101188143276788</ls_app_id>
+		<ls_width>193</ls_width>
+		<ls_height>600</ls_height>
+		<r_domain>http://www.joomlavision.com/</r_domain>
+		<r_width>193</r_width>
+		<r_height>600</r_height>
+		<r_header>1</r_header>
+		<r_color_scheme>light</r_color_scheme>
+	    </mtfacebook_config>
+	</mtfacebook>
+    </default>
+</config>

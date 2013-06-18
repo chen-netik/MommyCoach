@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <default>
+    	<!--reference name="footer">
+    		<block type="mtfacebook/mtfacebook" name="mtfacebook" template="netiksolutions/mtfacebook/mtfacebook.phtml" />
+    	</reference-->
+		<!--reference name="footer">
+		 <block type="cms/block" name="twitter-feed">
+		  <action method="setBlockId">
+		   <block_id>twitter-feed</block_id>
+		  </action>
+		 </block>
+		</reference-->
+    </default>
+</layout> 

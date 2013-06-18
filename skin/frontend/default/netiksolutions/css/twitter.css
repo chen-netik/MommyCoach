@@ -1,0 +1,34 @@
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700|Istok+Web|Oxygen:300,700,400|Varela+Round|Chivo|Telex);
+html {
+  color: white !important; }
+
+  .root.timeline.twitter-timeline p, .root.timeline.twitter-timeline a, .root.timeline.twitter-timeline ol, .root.timeline.twitter-timeline ul, .root.timeline.twitter-timeline li {
+    font-family: "Oxygen", "Ubuntu", "Helvetica Neue", Helvetica, arial, sans-serif; }
+
+.root.twitter-timeline .tweet {
+  padding: 2px 2px;
+  border-bottom: 1px dashed white; 
+  height: 70px;
+}
+.root.twitter-timeline a,
+.root.twitter-timeline a:visited {
+  text-decoration: underline; }
+.root.twitter-timeline .u-url,
+.root.twitter-timeline .expand,
+.root.twitter-timeline .hashtag,
+.root.twitter-timeline .profile {
+  text-decoration: none; }
+  .root.twitter-timeline .u-url:hover,
+  .root.twitter-timeline .expand:hover,
+  .root.twitter-timeline .hashtag:hover,
+  .root.twitter-timeline .profile:hover {
+    /*text-decoration: underline;*/
+    color: #fff; }
+
+.u-photo, .full-name, .inline-media, .p-nickname, .dt-updated {
+  display: none !important; 
+}
+  .var-narrow .tweet .header {
+	min-height: 0px;
+	padding: 0px; 
+}
