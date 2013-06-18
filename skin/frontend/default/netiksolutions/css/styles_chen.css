@@ -20,7 +20,9 @@
 	src: url('fonts/helvetica_neue_lt_com/HelveticaNeueLTCom-Lt.ttf') format('truetype');
 }
 
-
+h1, h2, h3, h4, h5, h6 {
+	color: #313232;
+}
 .header-container {
 	border: none;
 	
