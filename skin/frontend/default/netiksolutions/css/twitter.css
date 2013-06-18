@@ -8,6 +8,7 @@ html {
 .root.twitter-timeline .tweet {
   padding: 2px 2px;
   border-bottom: 1px dashed white; 
+  height: 70px;
 }
 .root.twitter-timeline a,
 .root.twitter-timeline a:visited {
@@ -24,11 +25,10 @@ html {
     /*text-decoration: underline;*/
     color: #fff; }
 
-.u-photo,
-.full-name,
-.inline-media, .p-nickname, .dt-updated {
-  display: none; }
+.u-photo, .full-name, .inline-media, .p-nickname, .dt-updated {
+  display: none !important; 
+}
   .var-narrow .tweet .header {
 	min-height: 0px;
 	padding: 0px; 
-  }
+}

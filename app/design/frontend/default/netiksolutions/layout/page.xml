@@ -49,13 +49,18 @@ Default layout, loads most of the pages
                 <action method="addJs"><script>mage/translate.js</script></action>
                 <action method="addJs"><script>mage/cookies.js</script></action>
 		<!--Chen Liang Start-->
-		<action method="addJs"><script>jquery/jquery-1.7.2.min.js</script></action>
+				<action method="addJs"><script>jquery/jquery-1.7.2.min.js</script></action>
+				<action method="addJs"><script>twitter/customize-twitter-1.1.min.js</script></action>
+				<action method="addJs"><script>jquery/fancybox/jquery.fancybox.js</script></action>
+				<action method="addItem"><type>js_css</type><name>jquery/fancybox/jquery.fancybox.css</name></action>
+				<action method="addJs"><script>magestore/sociallogin/sociallogin.js</script></action>
+				<action method="addJs"><script>magestore/sociallogin/lightbox.js</script></action>
 		<!--Chen Liang End-->
                 <block type="page/js_cookie" name="js_cookies" template="page/js/cookie.phtml"/>
 
                 <action method="addCss"><stylesheet>css/styles.css</stylesheet></action>
 				<action method="addCss"><stylesheet>css/styles_chen.css</stylesheet></action>
-				<action method="addCss"><stylesheet>css/twitter.css</stylesheet></action>
+				<action method="addCss"><stylesheet>css/twitter.css</stylesheet></action>                     
 				<action method="addCss"><stylesheet>css/styles_jacob.css</stylesheet></action>
 				<action method="addItem"><type>js_css</type><name>jqueryui/jquery.ui.all.css</name><params/></action>
 			
@@ -65,7 +70,7 @@ Default layout, loads most of the pages
 				<action method="addJs"><script>jqueryui/jquery.ui.button.js</script></action>
 				<action method="addJs"><script>jqueryui/jquery.ui.spinner.js</script></action>
 				<action method="addJs"><script>slideshow/jquery.cycle.all.2.74.js</script></action>
-				<action method="addJs"><script>twitter/customize-twitter-1.1.min.js</script></action>
+				
 				
                 <action method="addItem"><type>skin_css</type><name>css/styles-ie.css</name><params/><if>lt IE 8</if></action>
                 <action method="addCss"><stylesheet>css/widgets.css</stylesheet></action>

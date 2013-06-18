@@ -80,7 +80,7 @@ button.red-btn span {
 }
 .footer-container {
 	background-color: #303030;
-	min-height: 550px;
+	min-height: 630px;
 }
 .mt-fb-block .block-title {
 	background-image: none;
@@ -297,9 +297,54 @@ p.header-description {
 	line-height: 37PX;
 	letter-spacing: -2px;
 	/*font-family: 'Helveticaneue';*/
-		font-family: 'Helveticaneue Thin';
+	font-family: 'Helveticaneue Thin';
 }
 .live-coaching-header {
 	text-align: left;
 	padding-left: 50px; 
+}
+#sticker-content {
+	background: url("../images/STICKER.png");
+	background-size: 280px;
+	color: #FFF; 
+	width: 265px;
+	height: 170px;
+	margin-left: 0px;
+}
+#sticker-content p.first {
+	width: 181px; 
+	margin-left: 68px; 
+	padding-top: 55px; 
+}
+#sticker-content p.second {
+	width: 192px; 
+	margin-left: 63px; 
+}
+#sticker-content p.second  a {
+	font-weight: bold; 
+} 
+.footer-top-div  .footer-top-div-3 {
+	width: 250px !important;
+	margin-left: 0px !important;
+	
+}
+.footer-top-div  .footer-top-div-2 {
+	margin-right: 0px !important;
+	
+}
+.footer-top-div  .footer-top-div-3 h2 {
+	width: 200px !important;
+	margin-left: 50px !important;
+	width: 200px !important; 
+	
+} 
+.footer address {
+	font-family: 'Conv_UniversLTStd BoldCn';
+	color: #FFF;
+	font-size: 15px;
+	font-weight: normal; 
+}
+.footer-bottom-middle-div img {
+	margin-bottom: 30px;
+	width: 135px; 
 }

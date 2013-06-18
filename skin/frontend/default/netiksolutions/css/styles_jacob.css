@@ -10,6 +10,11 @@
 }
 .footer-bottom-div div.bottom-section {
 	float: left; 
+	padding-left: 20px; 
+}
+.footer-bottom-div div.bottom-section p {
+	padding-left: 13px; 
+	width: 125px;
 }
 .footer-bottom-left-div, .footer-bottom-middle-div, .footer-bottom-right-div{
 	width: 399px;
@@ -19,7 +24,7 @@
 }
 .footer-top-div {
 	width: 1200px;
-	height: 360px;
+	height: 435px;
 	clear: both;
 	margin-top: 70px;
 	float: left;
@@ -40,14 +45,15 @@
 .footer h2 {
 	font-size: 16px;
 	font-weight: bold;
-	color: #82CECA;
+	color: #00C9F2;
 	text-align: left;
 	margin-bottom: 21px;
+	font-family: 'Conv_UniversLTStd BoldCn';
 }
 .footer-bottom-div div.footer-bottom-right-div {
 	text-align: right;
 	width: 250px;
 }
 .footer-bottom-div div.footer-bottom-middle-div {
-	padding-left: 30px;
+
 }
