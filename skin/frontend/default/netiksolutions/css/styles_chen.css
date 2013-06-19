@@ -60,6 +60,7 @@ button.red-btn span {
 }
 .header {
 	height: 40px;
+	width: 1100px;
 }
 .header h1.logo {
 	margin: -5px;
@@ -323,7 +324,7 @@ p.header-description {
 	margin-left: 63px; 
 }
 #sticker-content p.second  a {
-	font-weight: bold; 
+	font-weight: 800; 
 } 
 .footer-top-div  .footer-top-div-3 {
 	width: 250px !important;
@@ -358,4 +359,7 @@ p.header-description {
 }
 #fb-profile-image {
 	border-radius: 50px; 
+}
+.footer .footer-top-div-4 h2 {
+	margin-bottom: 0px; 
 }
