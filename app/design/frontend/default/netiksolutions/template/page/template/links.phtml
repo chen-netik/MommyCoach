@@ -31,6 +31,7 @@
 ?>
 <?php $_links = $this->getLinks(); ?>
 <?php if(count($_links)>0): ?>
+<div id="top-links">
 <ul class="links"<?php if($this->getName()): ?> id="<?php echo $this->getName() ?>"<?php endif;?>>
 <?php 
 /**
@@ -48,30 +49,17 @@
     
 * */?> 
 	 <?php if ($this->helper('customer')->isLoggedIn() ):?>
+	 <li class=""><a class="login" title="Log In"><img id="email-img" src="<?php echo  $this->getSkinUrl('')?>images/email.png" /></a></li>
+     <li class=""><a class="signup" title="Sign Up"><img id="addpeople-img" src="<?php echo  $this->getSkinUrl('')?>images/addpeople.png" /></a></li>
      <?php else:?> 
      <li class=""><a class="login" title="Log In">Log In</a></li>
      <li class=""><a class="signup" title="Sign Up">SIGN UP</a></li>
      <?php endif;?>
      <li class="last"><a href="help" title="Help">HELP</a></li>
-     <?php if ($this->helper('customer')->isLoggedIn() ):?>
-     <?php else:?>
-     <li style="margin-top: -10px;">
-		 <button title="INVITE FRIENDS" class="button red-btn" value="INVITE FRIENDS">
-		 	<span><span><?php echo $this->__('INVITE FRIENDS') ?></span></span>
-		 </button>
-	 </li>
-	 <?php endif;?>
+     
 </ul>
 <?php endif; ?>
-<?php 
-//Chen Liang test for facebook image: 
-$block = $this->getLayout()->getBlockSingleton('Magestore_Sociallogin_Block_Fblogin');     
- //$block->_prepareData();
- if($block->getFbUserId()){
-     $fbUserId = $block->getFbUserId(); 
-     }
-?>
-<img id="fb-profile-image" src="https://graph.facebook.com/<?php echo $fbUserId; ?>/picture" />
+</div>
 
 <script type="text/javascript">
 //Chen Liang 

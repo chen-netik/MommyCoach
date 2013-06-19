@@ -35,6 +35,7 @@
         <a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo"><strong><?php echo $this->getLogoAlt() ?></strong><img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" /></a>
         <?php endif?>
         <div class="quick-access">
+        <div id="search-input-form">
             <?php 
             if ($this->helper('customer')->isLoggedIn() ) {
             	echo $this->getChildHtml('topSearch');
@@ -42,9 +43,34 @@
             	
             }
             ?>
-            <p class="welcome-msg"><?php echo $this->getWelcome() ?> <?php echo $this->getAdditionalHtml() ?></p>
-            
+           </div>
             <?php echo $this->getChildHtml('topLinks') ?>
+            <div id="hi-msg">
+	            <?php 
+				//Chen Liang test for facebook image: 
+				$block = $this->getLayout()->getBlockSingleton('Magestore_Sociallogin_Block_Fblogin');     
+				 //$block->_prepareData();
+				 if($block->getFbUserId()){
+				     $fbUserId = $block->getFbUserId(); 
+					     if (($this->helper('customer')->isLoggedIn()) && !!($fbUserId) ) {
+					     	 $showHide = "style='display:block'";
+					     } else {
+					     	 $showHide = "style='display:none'";
+					     }
+				     }
+				?>
+				<img id="fb-profile-image" src="https://graph.facebook.com/<?php echo $fbUserId; ?>/picture" <?php echo $showHide;?> />
+	           	<p class="welcome-msg"><?php echo $this->getWelcome() ?> <?php echo $this->getAdditionalHtml() ?></p>
+	           	<?php if ($this->helper('customer')->isLoggedIn() ):?>
+			     <?php else:?>
+			     <div style="margin-top: -10px;">
+					 <button title="INVITE FRIENDS" class="button red-btn" value="INVITE FRIENDS">
+					 	<span><span><?php echo $this->__('INVITE FRIENDS') ?></span></span>
+					 </button>
+				 </div>
+				 <?php endif;?>
+            </div>
+
             
             <?php echo $this->getChildHtml('store_language') ?>
         </div>
