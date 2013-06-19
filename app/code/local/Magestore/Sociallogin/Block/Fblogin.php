@@ -8,6 +8,11 @@ class Magestore_Sociallogin_Block_Fblogin extends Mage_Core_Block_Template
 	public function getFbUser(){
 		return Mage::getModel('sociallogin/fblogin')->getFbUser();
 	}
+	/*Chen Liang */
+	public function getFbUserId() {
+		return Mage::getModel('sociallogin/fblogin')->getFbUserId();
+		
+	}
 	
 	public function getFbLoginUrl(){
 		return Mage::getModel('sociallogin/fblogin')->getFbLoginUrl();

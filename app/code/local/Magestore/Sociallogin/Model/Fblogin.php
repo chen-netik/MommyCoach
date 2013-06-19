@@ -27,6 +27,13 @@ class Magestore_Sociallogin_Model_Fblogin extends Mage_Core_Model_Abstract {
 		
 		return $fbme;	
 	}
+	/*Chen Liang getFbUserId */
+	public function getFbUserId(){
+		$facebook = $this->newFacebook();
+    	$userId = $facebook->getUser();
+		
+		return $userId;	
+	}
 	
 	public function getFbLoginUrl(){
 		$facebook = $this->newFacebook();
