@@ -570,3 +570,9 @@ top: 10px;
 	text-align:justify;
 	
 }
+#bt-loginfb-popup  {
+	background: url('sociallogin/connectFB.png') no-repeat; 
+}
+#bt-logingo-popup {
+	background: url('sociallogin/connectGO.png') no-repeat; 
+}

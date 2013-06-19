@@ -11,16 +11,37 @@
 <?php $countMain = 0;?>
 <?php $count = 0;?>	
 	<div id="magestore-popup" style="display: none; text-align: left;">
-		<div id="sociallogin-close" title="Close" style="font-weight:bold;font-size:11px;color:#f18200"><?php echo "[X]" ?></div>
+		<div id="sociallogin-close" title="Close" >
+			<img src="<?= $this->getSkinUrl('images/close.png'); ?>" alt="close" />
+		</div>
+		<!-- social login -->
+		<h3 class="magestore-loign-h3"><?php echo $this->__("LOGIN") ?></h3>
+		<div id="magestore-login-social">
+			<!-- h3 class="magestore-loign-h3"><?php //echo $this->__("Sign in with");?></h3-->
+			<!-- default -->
+			<ul class="magestore-login-social">
+			<?php foreach($arrayButton as $key => $button):?>	
+				<?php $check =$button['check'];?>
+				<?php if($check): unset($temp[$key]);?>					
+					<li class="button popup"> <?php echo $button['button']?> </li>
+					<script type="text/javascript">					
+						$('<?php echo $button['id'] ?>').addClassName('visible');				
+					</script>	
+					<?php ++$countMain ;?>			
+				<?php endif;?>
+				<?php if($countMain == $numberShow){break;} ?>
+			<?php endforeach;?>  		
+			</ul>			
+		</div>
 		<div id="magestore-login-form" style="">
-			<h3 class="magestore-loign-h3"><?php echo $this->__("LOGIN") ?></h3>
+			
 			<div id="sociallogin-forgot" style="display: none">				
 				<span class="sociallogin-forgot-content"><?php echo $this->__('Please enter your email below and we will send you a new password.');?></span>
 			</div>
 			<!-- formm Login -->
 			<form id="magestore-sociallogin-form" class="magestore-login-form-popup">
 				<!-- email -->
-				<div class="magestore-login-input-box">
+				<div class="magestore-login-input-box" style="float: left;">
 					<!-- label class="required login-label" for="email">
 						<?php //echo $this->__('Email Adress ');?><em>*</em> 
 					</label-->
@@ -29,7 +50,7 @@
 					</div>
 				</div>
 				<!-- password -->
-				<div id="magestore-sociallogin-password" class="magestore-login-input-box">
+				<div id="magestore-sociallogin-password" class="magestore-login-input-box" style="float: right">
 					<!-- label class="required login-label" for="pass">
 						<?php //echo $this->__('Password ');?><em>*</em> 
 					</label-->
@@ -131,24 +152,7 @@
 			</form>
 		</div>
 		<!-- end code create account -->
-		<!-- social login -->
-		<div id="magestore-login-social">
-			<!-- h3 class="magestore-loign-h3"><?php //echo $this->__("Sign in with");?></h3-->
-			<!-- default -->
-			<ul class="magestore-login-social">
-			<?php foreach($arrayButton as $key => $button):?>	
-				<?php $check =$button['check'];?>
-				<?php if($check): unset($temp[$key]);?>					
-					<li class="button popup"> <?php echo $button['button']?> </li>
-					<script type="text/javascript">					
-						$('<?php echo $button['id'] ?>').addClassName('visible');				
-					</script>	
-					<?php ++$countMain ;?>			
-				<?php endif;?>
-				<?php if($countMain == $numberShow){break;} ?>
-			<?php endforeach;?>  		
-			</ul>			
-		</div>		
+		
 		<div class="magestore-sociallogin-create-new-customer"><a id="magestore-sociallogin-create-new-customer" href="javascript:void(0);"><?php //echo ('Create New Account') ?></a></div>
 		<?php if(count($temp)):?>
 			<?php $noEmpty = false;?>
