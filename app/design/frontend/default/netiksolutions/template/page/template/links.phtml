@@ -70,7 +70,9 @@
 jQuery(document).ready(function(){
   jQuery("a.signup").click(function(){
   // alert("The paragraph was clicked.");
+      $('magestore-popup').style.width="706px";
 	  socialLogin.open();
+      $('magestore-popup').style.width="706px";
 	  jQuery("#magestore-create-user").css("display", "block");
 	  jQuery("#magestore-login-social").css("display", "block");
 	  jQuery("#magestore-login-form").css("display", "none");
@@ -78,6 +80,7 @@ jQuery(document).ready(function(){
   });
   jQuery("a.login").click(function(){
 	  // alert("The paragraph was clicked.");
+	  	  $('magestore-popup').style.width="300px";
 		  socialLogin.open();
 		  $('magestore-popup').style.width="300px";
 		  jQuery("#magestore-create-user").css("display", "none");
