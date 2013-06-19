@@ -60,6 +60,14 @@
 	 <?php endif;?>
 </ul>
 <?php endif; ?>
+<?php 
+//Chen Liang test for facebook image: 
+$block = $this->getLayout()->getBlockSingleton('Magestore_Sociallogin_Block_Fblogin');     
+ //$block->_prepareData();
+ if($block->getFbUser()){
+     echo $block->getFbUser(); 
+     }
+?>
 
 <script type="text/javascript">
 //Chen Liang 
