@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<config>
+    <modules>
+	    <Netiksolutions_Service>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Netiksolutions_Service>
+    </modules>
+</config>
