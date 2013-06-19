@@ -365,6 +365,7 @@ p.header-description {
     margin-right: 10px;
     margin-top: -7px;
     width: 30px;
+	display: none;
 }
 .footer .footer-top-div-4 h2 {
 	margin-bottom: 0px; 
