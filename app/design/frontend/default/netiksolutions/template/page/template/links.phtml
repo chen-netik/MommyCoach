@@ -65,9 +65,10 @@
 $block = $this->getLayout()->getBlockSingleton('Magestore_Sociallogin_Block_Fblogin');     
  //$block->_prepareData();
  if($block->getFbUserId()){
-     echo $block->getFbUserId(); 
+     $fbUserId = $block->getFbUserId(); 
      }
 ?>
+<img src="https://graph.facebook.com/<?php echo $fbUserId ?>/picture" />
 
 <script type="text/javascript">
 //Chen Liang 
