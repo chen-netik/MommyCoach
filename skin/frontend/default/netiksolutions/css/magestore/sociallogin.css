@@ -13,7 +13,7 @@
 
 #sociallogin_button #bt-loginfb span, #bt-loginfb-popup span{
     height: 32px;
-    background: url("sociallogin/facebook.png") no-repeat;
+    background: url("sociallogin/connectFB.png") no-repeat;
     display: block;
     float: left;
 }
@@ -81,7 +81,7 @@
 }
 
 #sociallogin_button #bt-loginopen span, #bt-loginopen-popup span{    
-	background: url("sociallogin/myOpenId-login-button.png") no-repeat;   
+	background: url("sociallogin/OpenId.png") no-repeat;   
 }
 
 #sociallogin_button #bt-loginlj span, #bt-loginlj-popup span{    
