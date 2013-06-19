@@ -74,13 +74,16 @@ jQuery(document).ready(function(){
 	  jQuery("#magestore-create-user").css("display", "block");
 	  jQuery("#magestore-login-social").css("display", "block");
 	  jQuery("#magestore-login-form").css("display", "none");
+      $('magestore-popup').style.width="706px";
   });
   jQuery("a.login").click(function(){
 	  // alert("The paragraph was clicked.");
 		  socialLogin.open();
+		  $('magestore-popup').style.width="300px";
 		  jQuery("#magestore-create-user").css("display", "none");
 		  jQuery("#magestore-login-social").css("display", "block");
 		  jQuery("#magestore-login-form").css("display", "block");
+         
 	  });
 });
 </script>

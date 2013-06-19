@@ -19,6 +19,10 @@
 	font-family: 'Helveticaneue Thin';
 	src: url('fonts/helvetica_neue_lt_com/HelveticaNeueLTCom-Lt.ttf') format('truetype');
 }
+@font-face {
+	font-family: 'Univers Ultra Thin';
+	src: url('fonts/UniversUltraCondensedThin.ttf') format('truetype');
+}
 
 h1, h2, h3, h4, h5, h6 {
 	color: #313232;
@@ -365,17 +369,18 @@ p.header-description {
     margin-right: 10px;
     margin-top: -7px;
     width: 30px;
+	min-height: 5px;
 	display: none;
 }
 .footer .footer-top-div-4 h2 {
 	margin-bottom: 0px; 
 }
 .header .form-search button.amplifier-image-btn {
-    height: 15px;
-    left: -30px;
-    padding-top: 4px;
+    height: 20px;
+    left: -40px;
+    padding-top: 7px;
     position: relative;
-    width: 15px;
+    width: 25px;
 	background:none;
 	border:none;
 }
@@ -385,24 +390,25 @@ p.header-description {
 }
 .header .form-search {
 	position: relative;
-	width: 400px;
+	width: 500px;
 	right: 0px;
 	background-color: #465666;
 	border-radius: 5px;
 	padding: 5px;
-	height: 21px;
+	height: 33px;
 }
 .header .quick-access {
 	width: 900px;
 }
 #search-input-form {
-	width: 450px;
+	width: 520px;
 	float: left; 
 	min-height: 5px;
+	margin-top: -2px; 
 }
 #top-links {
 	height: 20px;
-	width: 300px;
+	width: 225px;
 	float: left;
 	padding-top: 10px;
 	
@@ -414,11 +420,19 @@ p.header-description {
 	float: left; 
 }
 input#search {
-	font-size: 10px;
-	width: 230px;
+	font-size: 11px;
+	width: 310px;
+	padding-left: 20px;
+	font-family: 'Conv_UniversLTStd BoldCn';
+	height: 27px;
+	color: #425560;
 }
 select#search-select {
-	font-size: 10px;
+	font-size: 11px;
+	font-family: 'Conv_UniversLTStd BoldCn';
+	height: 33px; 
+	color: #425560;
+	margin-top: -20px;
 }
 #email-img {
 	padding-top: 3px;
@@ -430,5 +444,129 @@ select#search-select {
 .header .welcome-msg {
 	float: left;
 	margin-left: 50px;
-	margin-top: -22px; 
+	font-family: 'Conv_UniversLTStd BoldCn';
+	text-transform: uppercase; 
+	
+}
+#search-bar-above-slide {
+	position: absolute;
+	top: 300px;
+	z-index: 1000000;
+	width: 900px;
+	margin-left: -450px;
+	left: 50%;
+	text-align: left;
+}
+#search-bar-above-slide h1 {
+	font-size: 40px; 
+	text-transform: uppercase; 
+	color: #FFF;
+	font-family: 'Conv_UniversLTStd BoldCn';
+	
+}
+#search-bar-above-slide h3 {
+	font-size: 16px; 
+	text-transform: uppercase; 
+	color: #FFF;
+	font-family: 'Conv_UniversLTStd BoldCn';
+	/*font-family: 'Univers Ultra Thin';*/
+	font-weight: normal;
+	margin-bottom: 21px; 
+	
+}
+#search-bar-above-slide div.form-search {
+	width: 780px;
+}
+#search-bar-above-slide div.form-search input#search {
+	height: 35px; 
+	width: 500px; 
+	border-radius: 5px; 
+	padding-left: 30px;
+	font-family: 'Conv_UniversLTStd BoldCn';
+	color: #425560;
+	font-size: 16px; 
+}
+#search-bar-above-slide div.form-search select#search-select {
+	height: 40px; 
+	width: 200px; 
+	border-radius: 5px; 
+	padding-left: 15px;
+	font-family: 'Conv_UniversLTStd BoldCn';
+	color: #425560;
+	font-size: 16px;
+	position: relative; 
+	top: 10px;
+} 
+#search-bar-above-slide .form-search {
+	background-color: #425560;
+	padding: 5px; 
+	border-radius: 5px; 
+	color: #425560;
+
+	
+}
+#search-bar-above-slide .form-search button.amplifier-image-btn {
+    height: 30px;
+    left: -45px;
+    padding-top: 4px;
+    position: relative;
+    width: 30px;
+	background:none;
+	border:none;
+}
+#search-bar-above-slide .form-search button.amplifier-image-btn span {
+	border: none;
+	background: none;
+}
+p.or {
+color: #FFF;
+width: 5px;
+margin: 0px;
+padding: 0px;
+float: left;
+position: relative;
+left: -20px;
+top: 10px; 
+	font-family: 'Conv_UniversLTStd BoldCn';
+}
+#search-bar-above-slide p.or {
+	left: 548px;
+	
+}
+.step-overlay {
+	position: relative; 
+	z-index: 2000;
+	top: -250px;
+	width: 260px;
+	margin-left: -130px;
+	left: 50%;
+	text-align: left;
+}
+.work-steps {
+	width: 390px;
+	float: left; 
+}
+.step-overlay h2, .step-overlay h3 {
+	margin-left: 55px; 
+}
+.step-overlay h2 {
+	color: #2F3030; 
+	font-size: 22px; 
+	font-family: 'Helveticaneue';
+	margin-top: 5px;
+}
+.step-overlay h3 {
+	color: #475867;
+	font-size: 16px; 
+	font-family: 'Helveticaneue Thin';
+	margin-bottom: 40px;
+	position: relative; 
+	top: -10px; 
+}
+.step-overlay p {
+	color: #62615D; 
+	font-family: 'Verdana';
+	font-size:13px; 
+	text-align:justify;
+	
 }

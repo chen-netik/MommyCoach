@@ -224,7 +224,7 @@ a#magestore-forgot-password {
 }
 .sociallogin-input-box .input-text{
 	border: 1px solid #CCCCCC;
-    border-radius: 2px 2px 2px 2px;
+    border-radius: 8px;
     box-shadow: 0 2px 2px #E3E3E3 inset;
     font-family: inherit;
     font-size: 1.1em;
