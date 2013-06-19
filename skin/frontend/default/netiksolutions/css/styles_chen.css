@@ -360,6 +360,11 @@ p.header-description {
 }
 #fb-profile-image {
 	border-radius: 50px; 
+	display: block;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: -7px;
+    width: 30px;
 }
 .footer .footer-top-div-4 h2 {
 	margin-bottom: 0px; 
@@ -420,4 +425,9 @@ select#search-select {
 }
 #addpeople-img {
 	width: 21px;
+}
+.header .welcome-msg {
+	float: left;
+	margin-left: 50px;
+	margin-top: -22px; 
 }
