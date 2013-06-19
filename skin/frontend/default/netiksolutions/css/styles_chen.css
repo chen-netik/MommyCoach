@@ -160,7 +160,7 @@ div.home-landing #nav {
 	text-align: center;
 }
 .header .logo  img{
-	width: 100px; 
+	width: 175px; 
 }
 #how-it-works-id {
 	height: 400px; 
@@ -355,4 +355,7 @@ p.header-description {
 }
 .header .form-search {
 	background-image: none; 
+}
+#fb-profile-image {
+	border-radius: 50px; 
 }

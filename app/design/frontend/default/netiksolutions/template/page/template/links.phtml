@@ -46,9 +46,12 @@
  *       <?php endif;?>
  *  <?php endforeach; ?>
     
-* */?>  
+* */?> 
+	 <?php if ($this->helper('customer')->isLoggedIn() ):?>
+     <?php else:?> 
      <li class=""><a class="login" title="Log In">Log In</a></li>
      <li class=""><a class="signup" title="Sign Up">SIGN UP</a></li>
+     <?php endif;?>
      <li class="last"><a href="help" title="Help">HELP</a></li>
      <?php if ($this->helper('customer')->isLoggedIn() ):?>
      <?php else:?>
@@ -68,7 +71,7 @@ $block = $this->getLayout()->getBlockSingleton('Magestore_Sociallogin_Block_Fblo
      $fbUserId = $block->getFbUserId(); 
      }
 ?>
-<img src="https://graph.facebook.com/<?php echo $fbUserId ?>/picture" />
+<img id="fb-profile-image" src="https://graph.facebook.com/<?php echo $fbUserId; ?>/picture" />
 
 <script type="text/javascript">
 //Chen Liang 
