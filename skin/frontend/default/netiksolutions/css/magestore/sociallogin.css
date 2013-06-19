@@ -302,3 +302,14 @@ a#magestore-forgot-password {
 #magestore-button-sociallogin span span {
 	width: 80px; 
 }
+#magestore-create-user {
+	clear: both; 
+}
+#one-click-sign-up-wrapper {
+	width: 350px;
+	float: left; 
+}
+#regular-sign-up-wrapper {
+	width: 350px; 
+	float: right; 
+}

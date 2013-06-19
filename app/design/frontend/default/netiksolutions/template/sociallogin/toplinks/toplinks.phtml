@@ -15,7 +15,7 @@
 			<img src="<?= $this->getSkinUrl('images/close.png'); ?>" alt="close" />
 		</div>
 		<!-- social login -->
-		<h3 class="magestore-loign-h3"><?php echo $this->__("LOGIN") ?></h3>
+		<h3 class="magestore-loign-h3" id="h3-login-link"><?php echo $this->__("LOGIN") ?></h3>
 		<div id="magestore-login-social">
 			<!-- h3 class="magestore-loign-h3"><?php //echo $this->__("Sign in with");?></h3-->
 			<!-- default -->
@@ -96,60 +96,82 @@
 			</form>						
 		</div>		
 		<!-- create new user -->		
-		<div id="magestore-create-user" style="float: left; display: none" >	
-			<h3 class="magestore-loign-h3"><?php echo $this->__("SIGN UP WITH EMAIL") ?></h3>
-			<form id="magestore-sociallogin-form-create" class="magestore-login-form-popup">		
-				<ul class="form-list">
-					<li class="fields">				
-						<div class="field name-firstname sociallogin-field">
-							<div class="input-box">
-								<input id="socialogin.firstname" class="input-text required-entry" type="text" title="First Name" value="" name="firstname" placeholder="FIRST NAME">
-							</div>
-						</div>
-						<div class="field name-lastname sociallogin-field">
-							<div class="input-box">
-								<input id="socialogin.lastname" class="input-text required-entry" type="text" title="Last Name" value="" name="lastname" placeholder="LAST NAME">
-							</div>
-						</div>
-					</li>
-					<li class="fields">
-						<div class="field sociallogin-field">
-							<div class="input-box">
-								<input id="socialogin.email" class="input-text required-entry validate-email" type="text" title="Email" value="" name="email" placeholder="EMAIL">
-							</div>
-						</div>
-					</li>
-					<li class="fields">
-						<div class="field sociallogin-field">
-							<div class="input-box">
-								<input id="socialogin.pass" class="input-text required-entry validate-password" type="password" title="Pass" value="" name="pass" placeholder="PASSWORD *">
-							</div>
-						</div>
-						<div class="field sociallogin-field">
-							<div class="input-box">
-								<input id="socialogin.pass.confirm" class="input-text required-entry validate-cpassword" type="password" title="Pass Confirm" value="" name="passConfirm" placeholder="PASSWORD *">
-							</div>
-						</div>
-					</li>
-				</ul>
-				<!-- image ajax -->
-				<div id="progress_image_login_create" class="ajax-login-image" style="display: none">					
+		<div id="magestore-create-user" style="float: left; display: none" >
+			<div id="one-click-sign-up-wrapper">	
+				<h3 class="magestore-loign-h3"><?php echo $this->__("SIGN UP WITH ONE CLICK") ?></h3>
+				<div id="magestore-login-social-copy">
+				<!-- h3 class="magestore-loign-h3"><?php //echo $this->__("Sign in with");?></h3-->
+				<!-- default -->
+				<ul class="magestore-login-social">
+				<?php foreach($arrayButton as $key => $button):?>	
+					<?php $check =$button['check'];?>
+					<?php if($check): unset($temp[$key]);?>					
+						<li class="button popup"> <?php echo $button['button']?> </li>
+						<script type="text/javascript">					
+							$('<?php echo $button['id'] ?>').addClassName('visible');				
+						</script>	
+						<?php ++$countMain ;?>			
+					<?php endif;?>
+					<?php if($countMain == $numberShow){break;} ?>
+				<?php endforeach;?>  		
+				</ul>			
 				</div>
-				<!-- error invalid create ACC -->
-				<div id="magestore-invalid-create" class="magestore-invalid-email"></div>
-				<div class="magestore-create-popup-button">		
-					<h4>ALREADY A USER?</h4>	
-					<a id="magestore-create-back" href="javascript:void(0);">
-					<button id="magestore-create-back" class="button red-btn" type="button">	
-					<span><span>
-						<?php echo $this->__('Login') ?>
-					</span></span>
-					</button></a>
-					<button id="magestore-button-sociallogin-create" class="button red-btn popup_click_btn" title="<?php echo $this->__('Sumbit');?>" type="button" style="margin-right: 17px">
-						<span><span><?php echo $this->__('SIGN UP')?></span></span>
-					</button>
-				</div>
-			</form>
+			</div>
+			<div id="regular-sign-up-wrapper">
+				<h3 class="magestore-loign-h3"><?php echo $this->__("SIGN UP WITH EMAIL") ?></h3>
+				<form id="magestore-sociallogin-form-create" class="magestore-login-form-popup">		
+					<ul class="form-list">
+						<li class="fields">				
+							<div class="field name-firstname sociallogin-field">
+								<div class="input-box">
+									<input id="socialogin.firstname" class="input-text required-entry" type="text" title="First Name" value="" name="firstname" placeholder="FIRST NAME">
+								</div>
+							</div>
+							<div class="field name-lastname sociallogin-field">
+								<div class="input-box">
+									<input id="socialogin.lastname" class="input-text required-entry" type="text" title="Last Name" value="" name="lastname" placeholder="LAST NAME">
+								</div>
+							</div>
+						</li>
+						<li class="fields">
+							<div class="field sociallogin-field">
+								<div class="input-box">
+									<input id="socialogin.email" class="input-text required-entry validate-email" type="text" title="Email" value="" name="email" placeholder="EMAIL">
+								</div>
+							</div>
+						</li>
+						<li class="fields">
+							<div class="field sociallogin-field">
+								<div class="input-box">
+									<input id="socialogin.pass" class="input-text required-entry validate-password" type="password" title="Pass" value="" name="pass" placeholder="PASSWORD *">
+								</div>
+							</div>
+							<div class="field sociallogin-field">
+								<div class="input-box">
+									<input id="socialogin.pass.confirm" class="input-text required-entry validate-cpassword" type="password" title="Pass Confirm" value="" name="passConfirm" placeholder="PASSWORD *">
+								</div>
+							</div>
+						</li>
+					</ul>
+					<!-- image ajax -->
+					<div id="progress_image_login_create" class="ajax-login-image" style="display: none">					
+					</div>
+					<!-- error invalid create ACC -->
+					<div id="magestore-invalid-create" class="magestore-invalid-email"></div>
+					<div class="magestore-create-popup-button">		
+						<h4>ALREADY A USER?</h4>	
+						<a id="magestore-create-back" href="javascript:void(0);">
+						<button id="magestore-create-back" class="button red-btn" type="button">	
+						<span><span>
+							<?php echo $this->__('Login') ?>
+						</span></span>
+						</button></a>
+						<button id="magestore-button-sociallogin-create" class="button red-btn popup_click_btn" title="<?php echo $this->__('Sumbit');?>" type="button" style="margin-right: 17px">
+							<span><span><?php echo $this->__('SIGN UP')?></span></span>
+						</button>
+					</div>
+				</form>
+			</div>
 		</div>
 		<!-- end code create account -->
 		
