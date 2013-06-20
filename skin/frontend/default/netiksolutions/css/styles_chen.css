@@ -204,9 +204,18 @@ div.home-landing #nav {
 	
 }
 .live-coaching-left {
-	width: 400px;
 	float: left; 
+	background: url('../images/DEVICE.png') no-repeat top left transparent;
+    width: 538px; /* Adjust TV image width */
+    height: 434px; /* Adjust TV image height */
+    position: relative;
 }
+.live-coaching-left-video {
+    position: absolute;
+    top: 26px; /* Adjust top position */
+    left: 18px; /* Adjust left position */
+}
+
 .live-coaching-right {
 	width: 399px;
 	float: right; 
