@@ -613,3 +613,6 @@ top: 10px;
 .block-layered-nav .currently li {
 	background: none;
 }
+a {
+	color: #7C7C7C; 
+}
