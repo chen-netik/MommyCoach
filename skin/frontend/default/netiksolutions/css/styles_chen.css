@@ -616,3 +616,10 @@ top: 10px;
 a {
 	color: #7C7C7C; 
 }
+.block-layered-nav .block-content {
+	border: none; 
+	background-color: #ECECEC; 
+}
+.block-layered-nav .actions {
+	background: none; 
+}

@@ -202,7 +202,7 @@ class Amasty_Shopby_Model_Catalog_Layer_Filter_Attribute extends Mage_Catalog_Mo
 //                          . '<a href="' . $url . '">'
 //                          . '<img src="' . $this->_getRemoveImage() . '" alt="' . Mage::helper('catalog')->__('Remove This Item') . '" />'
                           . '<a href="' . $url . '" class="btn-remove-inline">'
-                          . '<img src="' . $this->_getBlankImage() . '" width="13" height="12" alt="' . Mage::helper('catalog')->__('Remove This Item') . '" />'
+                          . '<img src="' . $this->_getBlankImage() . '" width="26" height="26" alt="' . Mage::helper('catalog')->__('Remove This Item') . '" />'
                           . '</a>, ';
                 }
             }
