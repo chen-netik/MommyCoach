@@ -310,6 +310,45 @@ a#magestore-forgot-password {
 	float: left; 
 }
 #regular-sign-up-wrapper {
-	width: 350px; 
+	width: 280px; 
 	float: right; 
+	
+}
+#magestore-sociallogin-form-create input.sign-up-short-input {
+	width: 130px !important;
+}
+#magestore-sociallogin-form-create input.sign-up-long-input {
+	width: 280px !important;
+}#magestore-sociallogin-form-create div.short-inputbox {
+	width: 130px !important; 
+}
+#magestore-button-sociallogin-create span span {
+	width: 80px; 
+}
+div#magestore-login-social-copy {
+	text-align: center; 
+}
+div#create-user-big-wrapper {
+	width: 690px;
+	height: 250px;
+	border-bottom: 1px solid #D7D7D7; 
+}
+#already-user-wrapper {
+	width: 245px;
+	margin-top: 21px; 
+	height: 30px; 
+}
+#already-user-wrapper h4 {
+	width: 140px; 
+	float: left;
+	margin-top: 3px; 
+}
+#magestore-button-sociallogin-forgot {
+	margin-top: 9px; 
+}
+#already-user-wrapper a#magestore-create-back {
+	float: right; 
+}
+#magestore-create-back span span {
+	width: 80px; 
 }
