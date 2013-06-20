@@ -603,3 +603,13 @@ top: 10px;
 	height: 0px; 
 	
 }
+.amshopby-filters-left div.block-content {
+	background: none; 
+	border: 0px; 
+}
+.block-layered-nav .currently .label {
+	background: none; 
+}
+.block-layered-nav .currently li {
+	background: none;
+}
