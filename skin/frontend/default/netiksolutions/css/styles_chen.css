@@ -585,3 +585,7 @@ top: 10px;
 #bt-logingo-popup {
 	background: url('sociallogin/connectGO.png') no-repeat; 
 }
+.pager {
+	background: none; 
+	border-top: 0px; 
+}
