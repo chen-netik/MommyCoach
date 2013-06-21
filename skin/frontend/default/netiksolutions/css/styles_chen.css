@@ -626,3 +626,29 @@ a {
 .block-layered-nav .actions {
 	background: none; 
 }
+.ratings {
+	width: 90px; 
+}
+.f-fix {
+	width: 70%; 
+}
+
+.list-right {
+	width: 28%;
+	float: right; 
+}
+button.blue-btn {
+	margin-bottom: 5px; 
+}
+button.blue-btn span {
+	background-color: #40C6F2;
+	border-radius: 5px;
+	border:none;
+	padding: 5px 10px;
+}
+
+button.blue-btn span span {
+	width: 96px; 
+	font-family: 'Verdana';
+	font-size: 11px; 
+}

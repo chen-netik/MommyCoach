@@ -1,0 +1,38 @@
+<?php
+/**
+ * Chen Liang 
+ * 
+ * second search bar 
+ *
+ * @category    design
+ * @package     base_default
+ * @copyright   Copyright (c) 2012 Magento Inc. (http://www.magentocommerce.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+/* @var $this Mage_Core_Block_Template */
+/* @var $catalogSearchHelper Mage_Catalogsearch_Helper_Data */
+$catalogSearchHelper =  $this->helper('catalogsearch');
+$baseUrl = Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_WEB);
+
+?>
+<div id="mini-search-input-form">
+<h4>KEYWORDS</h4>
+	<form id="search_mini_form2" action="<?php echo $catalogSearchHelper->getResultUrl() ?>" method="get">
+	    <div class="form-search">
+	        <input id="mini-search" type="text" name="<?php echo $catalogSearchHelper->getQueryParamName() ?>" value="<?php echo $catalogSearchHelper->getEscapedQueryText() ?>" class="input-text" maxlength="<?php echo $catalogSearchHelper->getMaxQueryLength();?>" placeholder=""/>
+	        <button type="submit" title="<?php echo $this->__('GO') ?>" class="button amplifier-image-btn search-button">
+	        	<span><span><img src="<?php echo $this->getSkinUrl('')?>images/search.png" /></span></span>
+	        </button>
+	        <button type="submit" title="<?php echo $this->__('GO') ?>" class="button red-btn search-button">
+	        	<span><span>GO</span></span>
+	        </button>
+	        <div id="search_autocomplete" class="search-autocomplete"></div>
+	        <script type="text/javascript">
+	        //<![CDATA[
+	            var searchForm = new Varien.searchForm('search_mini_form', 'search', '<?php echo $this->__('') ?>');
+	            searchForm.initAutocomplete('<?php echo $catalogSearchHelper->getSuggestUrl() ?>', 'search_autocomplete');
+	        //]]>
+	        </script>
+	    </div>
+	</form>
+</div>

@@ -50,10 +50,12 @@
         <remove name="enterprisesearch.leftnav"/> 
         
         <reference name="left">
-           <block type="amshopby/search_layer" name="amshopby.navleft" after="currency" template="catalog/layer/view.phtml"/> 
+           <block type="amshopby/search_layer" name="amshopby.navleft" after="currency" template="catalog/layer/view.phtml">
+			<block type="core/template" name="top.search" as="topSearch" template="catalogsearch/form.mini2.phtml"/>
+		   </block>
         </reference>  
         <reference name="content">
-                <block type="amshopby/search_layer_top" name="amshopby.navtop" before="search.result" template="amshopby/view_top.phtml"/>
+           <block type="amshopby/search_layer_top" name="amshopby.navtop" before="search.result" template="amshopby/view_top.phtml"/>
         </reference>
     </catalogsearch_result_index>   
 
