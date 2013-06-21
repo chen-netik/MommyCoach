@@ -652,3 +652,6 @@ button.blue-btn span span {
 	font-family: 'Verdana';
 	font-size: 11px; 
 }
+.rating-box .rating {
+	background: url(../images/bkg_rating.png) 0 100% repeat-x;
+}
