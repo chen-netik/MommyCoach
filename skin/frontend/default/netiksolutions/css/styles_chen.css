@@ -651,12 +651,12 @@ a {
 	width: 90px; 
 }
 .f-fix {
-	width: 70%; 
+	width: 78%; 
 	margin-top:11px;
 }
 
 .list-right {
-	width: 28%;
+	width: 20%;
 	float: right; 
 }
 button.blue-btn {
@@ -683,10 +683,15 @@ button.blue-btn span span {
 	border-bottom: 1px solid #DBD8D3;
 }
 form#search_mini_form2 input#mini-search {
-	width: 105px;
+	width: 145px;
 	padding-left: 15px;
 	height: 30px;
 	border-radius: 5px;
+	height: 45px;
+}
+form#search_mini_form2 div.form-search {
+	width: 240px;
+	height: 50px; 
 }
 form#search_mini_form2 button.amplifier-image-btn span{
 	position: relative; 
@@ -698,13 +703,13 @@ form#search_mini_form2 button.amplifier-image-btn span{
 ol#products-list li {
 	
 	border: 1px solid #DBD8D3;
-	padding: 10px;
+	padding: 15px 20px;
 	margin-bottom: 10px; 
 }
 ol#products-list li div.li-wrapper {
 	background-color: #F6F7F6;
 	min-height: 150px;
-	padding: 0px 0px 0px 5px;
+	padding: 0px 15px 0px 0px;
 }
 ol.currently li {
 	float: left;
@@ -802,10 +807,12 @@ div.schedule-a-section p {
 .total-results p.number strong {
 		font-family: 'Conv_UniversLTStd BoldCn';
 			color: #425560; 
+			font-size: 29px;
 }
 .total-results p {
 		font-family: 'Conv_UniversLTStd BoldCn';
-			color: #425560; 
+		color: #425560; 
+		font-size: 15px;
 }
 #mini-search-input-form h4 {
 	color: #425560; 
@@ -847,6 +854,7 @@ div.tag-list div.tag {
 		text-align: center;
 		margin-right: 5px;
 		height: 25px; 
+		text-transform: uppercase;
 }
 .products-list .desc {
 	height: 65px;
@@ -863,4 +871,25 @@ div.tag-list div.tag {
 }
 input, select, textarea, button {
 font: 12px/16px Arial, Helvetica, sans-serif;
+}
+.col-main {
+	width: 800px; 
+}
+.main {
+	width: 1100px; 
+}
+.amshopby-filters-left {
+	border-right: 1px solid #DBD8D3;
+	width: 250px;
+	min-height: 680px; 
+}
+.btn-remove {
+	background: url(../images/spacer.gif) 0 0 no-repeat;
+}
+div.review-wrapper div.ratings {
+	height: 30px;
+}
+
+div.review-wrapper  {
+	margin-top: 5px; 
 }

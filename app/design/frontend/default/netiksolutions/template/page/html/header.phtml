@@ -59,6 +59,7 @@
 					     }
 				     }
 				?>
+				<input id="hide-input" value="<?php echo $fbUserId; ?>" style="display: none; " />
 				<img id="fb-profile-image" src="https://graph.facebook.com/<?php echo $fbUserId; ?>/picture" <?php echo $showHide;?> />
 	           	<p class="welcome-msg"><?php echo $this->getWelcome() ?> <?php echo $this->getAdditionalHtml() ?></p>
 	           	<?php if ($this->helper('customer')->isLoggedIn() ):?>
@@ -102,7 +103,7 @@
             }
       }
       jQuery(document).ready(function(){
-    	  if (jQuery("#fb-profile-image").length != 0) {
+    	  if (jQuery("#hide-input").val().length != 0) {
     		    jQuery("p.welcome-msg").css("margin-top", "-20px"
     		    )
     		}
