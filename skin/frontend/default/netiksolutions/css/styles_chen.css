@@ -396,7 +396,7 @@ p.header-description {
 	display: none;
 }
 .footer .footer-top-div-4 h2 {
-	margin-bottom: 0px; 
+	margin-bottom: 10px; 
 }
 .header .form-search button.amplifier-image-btn {
     height: 23px;
@@ -449,6 +449,7 @@ input#search {
 	font-family: 'Conv_UniversLTStd BoldCn';
 	height: 25px;
 	color: #425560;
+		background-color: #EDEBE9;
 }
 select#search-select {
 	font-size: 11px;
@@ -457,6 +458,7 @@ select#search-select {
 	color: #425560;
 	margin-top: -25px;
 	width: 195px;
+		background-color: #EDEBE9;
 }
 #email-img {
 	padding-top: 3px;
@@ -499,33 +501,38 @@ select#search-select {
 	
 }
 #search-bar-above-slide div.form-search {
-	width: 780px;
+	width: 773px;
 }
 #search-bar-above-slide div.form-search input#search {
-	height: 35px; 
+	height: 39px; 
 	width: 500px; 
 	border-radius: 5px; 
-	padding-left: 30px;
+	padding-left: 25px;
 	font-family: 'Conv_UniversLTStd BoldCn';
-	color: #425560;
+	color: #425560 !important;
 	font-size: 16px; 
+	background-color: #EDEBE9;
+}
+#search-bar-above-slide div.form-search input[placeholder] {
+	color: #425560 !important;
 }
 #search-bar-above-slide div.form-search select#search-select {
-	height: 40px; 
-	width: 200px; 
+	height: 43px; 
+	width: 197px; 
 	border-radius: 5px; 
 	padding-left: 15px;
 	font-family: 'Conv_UniversLTStd BoldCn';
 	color: #425560;
 	font-size: 16px;
 	position: relative; 
-	top: 10px;
+	top: 13px;
+		background-color: #EDEBE9;
 } 
 #search-bar-above-slide .form-search {
-	background-color: #425560;
-	padding: 5px; 
+	background-color: #465666;
+	padding: 7px 5px 7px 5px; 
 	border-radius: 5px; 
-	color: #425560;
+	color: #465666;
 
 	
 }
@@ -554,8 +561,8 @@ top: 10px;
 	font-family: 'Conv_UniversLTStd BoldCn';
 }
 #search-bar-above-slide p.or {
-	left: 548px;
-	
+	left: 543px;
+	font-size: 16px; 
 }
 .step-overlay {
 	position: relative; 
@@ -853,4 +860,7 @@ div.tag-list div.tag {
 }
 .catalogsearch-result-index .amplifier-image-btn {
 	width: 0px; 
+}
+input, select, textarea, button {
+font: 12px/16px Arial, Helvetica, sans-serif;
 }
