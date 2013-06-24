@@ -91,12 +91,6 @@ Category default layout
                             <action method="addPagerLimit" translate="label"><mode>list</mode><limit>all</limit><label>All</label></action>
                         -->
                     </block>
-					
-					
-					 <block type="catalog/product_view_additional" name="product.info.additional" as="product_additional_data" />
-
-			
-			
                     <action method="addColumnCountLayoutDepend"><layout>empty</layout><count>6</count></action>
                     <action method="addColumnCountLayoutDepend"><layout>one_column</layout><count>5</count></action>
                     <action method="addColumnCountLayoutDepend"><layout>two_columns_left</layout><count>4</count></action>

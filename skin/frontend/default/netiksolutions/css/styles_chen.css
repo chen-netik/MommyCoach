@@ -828,6 +828,9 @@ div.schedule-a-section p {
 .catalogsearch-result-index .rating-links a {
 	display: none; 
 }
+.catalog-category-view .rating-links a {
+	display: none; 
+}
 .total-results p.number strong {
 		font-family: 'Conv_UniversLTStd BoldCn';
 			color: #425560; 
