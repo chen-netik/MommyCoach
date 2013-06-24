@@ -10,6 +10,7 @@
     <?php endif; ?>
     <?php foreach ($_filters as $_filter): ?>
         <li>
+        	<div class="filter-li">
             <?php if (!$_filter->getIsMultiValues()): ?>
                 <?php if (Mage::helper('amshopby')->isVersionLessThan(1, 4)): ?>
                     <a href="<?php echo $_filter->getRemoveUrl() ?>" class="widget-btn" title="<?php echo $_removeTxt ?>"><img src="<?php echo $this->getSkinUrl('images/list_remove_btn.gif') ?>" alt="<?php echo $_removeTxt ?>" /></a>             
@@ -17,7 +18,9 @@
                     <a href="<?php echo $_filter->getRemoveUrl() ?>" class="btn-remove" title="<?php echo $_removeTxt ?>"><?php echo $_removeTxt ?></a> 
                 <?php endif; ?>            
             <?php endif; ?>
-            <span class="label"><?php echo Mage::helper('catalog')->__($_filter->getName()) ?>:</span> <?php echo $_filter->getLabel() ?>
+            <!--span class="label"><?php echo Mage::helper('catalog')->__($_filter->getName()) ?>:</span--> 
+            <?php echo $_filter->getLabel() ?>
+            </div>
         </li>
     <?php endforeach; ?>
     </ol>

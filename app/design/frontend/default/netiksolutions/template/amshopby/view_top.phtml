@@ -3,6 +3,7 @@
     <div class="block-title">
         <strong><span><?php echo $this->__('Shop By') ?></span></strong>
     </div>
+    <?php echo $this->getChildHtml('topSearch'); ?>
     <div class="block-content">
         <?php echo $this->getStateHtml() ?>
         <?php if($this->canShowOptions()): ?>

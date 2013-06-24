@@ -51,7 +51,9 @@
         <reference name="root">
             <action method="setTemplate"><template>page/2columns-left.phtml</template></action>
         </reference>
+		
         <reference name="left">
+			<block type="core/template" name="top.search" as="topSearch" before="-" template="catalogsearch/form.mini2.phtml"/>
             <block type="catalogsearch/layer" name="catalogsearch.leftnav" after="currency" template="catalog/layer/view.phtml"/>
         </reference>
         <reference name="content">

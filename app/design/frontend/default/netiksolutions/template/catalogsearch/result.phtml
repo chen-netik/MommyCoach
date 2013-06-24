@@ -24,7 +24,12 @@
  * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
  */
 ?>
+
 <?php if($this->getResultCount()): ?>
+    <div class="total-results">
+      <p class="number"><strong><?php echo $this->__('%s', $this->getResultCount()) ?></strong></p>
+      <p>RESULTS</p>
+    </div>
 <?php echo $this->getMessagesBlock()->getGroupedHtml() ?>
 <div class="page-title">
     <?php if ($this->helper('rss/catalog')->getTagFeedUrl()): ?>
