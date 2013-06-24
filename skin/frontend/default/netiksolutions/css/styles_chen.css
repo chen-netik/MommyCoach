@@ -822,3 +822,18 @@ div.schedule-a-section p {
 .breadcrumbs li strong {
 	color: #425560; 
 }
+div.tag-list div.tag {
+	width: 70px; 
+	float: left; 
+	background-color: #425560; 
+	color: #FFF; 
+		font-family: 'Conv_UniversLTStd BoldCn';
+		font-size: 13px; 
+		text-align: center;
+		margin-right: 5px;
+		height: 25px; 
+}
+.products-list .desc {
+	height: 60px;
+	overflow:hidden;
+}
