@@ -122,13 +122,13 @@ if (count($this->getItems()) == 1){
         </div>
         <div class="amshopby-slider-price amshopby-slider-price-from">
         <?php
-            $value = '<span id="' . $prefix .'-from-slider">' . $fromValue . '</span>';
+            $value = '<span id="' . $prefix .'-from-slider">' . '$' .$fromValue . '</span>';
              echo amshopby_render_label($valuePlacement, $valueLabel, $value); 
          ?>
         </div>
         <div class="amshopby-slider-price amshopby-slider-price-to">
         <?php
-            $value = '<span id="' . $prefix .'-to-slider">' . $toValue . '</span>';
+            $value = '<span id="' . $prefix .'-to-slider">' . '$' . $toValue . '</span>';
              echo amshopby_render_label($valuePlacement, $valueLabel, $value); 
          ?>
         </div>

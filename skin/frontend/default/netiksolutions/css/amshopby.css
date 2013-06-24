@@ -32,7 +32,12 @@ div.block-layered-nav dd a.amshopby-attr {
 	padding-left:25px;
 	background:transparent url(../images/amshopby-cb1.png) no-repeat left center;
  } 
-div.block-layered-nav dd a.amshopby-attr-selected {font-weight: bold; padding-left:25px; background:transparent url(../images/amshopby-cb2.png) no-repeat left center;} 
+div.block-layered-nav dd a.amshopby-attr-selected {
+font-weight: bold; 
+padding-left:25px; 
+background:transparent url(../images/amshopby-cb2.png) no-repeat left center;
+text-decoration: none; 
+} 
 div.block-layered-nav dd a img {padding: 0px 4px 5px; float:left;} 
 
 div.block-layered-nav dd li.amshopby-cat-level-2 {padding-left:10px;}
