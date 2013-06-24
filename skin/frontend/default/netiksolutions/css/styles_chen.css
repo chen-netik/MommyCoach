@@ -874,11 +874,12 @@ div.tag-list div.tag {
 	background-color: #425560; 
 	color: #FFF; 
 		font-family: 'Conv_UniversLTStd BoldCn';
-		font-size: 13px; 
+		font-size: 12px; 
 		text-align: center;
 		margin-right: 5px;
 		height: 25px; 
 		text-transform: uppercase;
+		line-height: 23px; 
 }
 .products-list .desc {
 	height: 65px;
