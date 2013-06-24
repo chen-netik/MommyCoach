@@ -342,6 +342,7 @@ div#create-user-big-wrapper {
 	width: 140px; 
 	float: left;
 	margin-top: 3px; 
+		font-size: 12px;
 }
 #magestore-button-sociallogin-forgot {
 	margin-top: 9px; 

@@ -56,7 +56,8 @@ body {
 	color: #FFF;
 	text-transform: uppercase;
 	text-decoration: none;
-	font-weight: bold;
+	font-size: 13px; 
+	font-family: 'Conv_UniversLTStd BoldCn';
 	
 }
 .header .links li {
@@ -69,7 +70,7 @@ button.red-btn span {
 	padding: 5px 10px;
 }
 .header-container {
-	height: 60px;
+	height: 65px;
 }
 .header {
 	height: 40px;
@@ -339,6 +340,7 @@ p.header-description {
 	width: 265px;
 	height: 170px;
 	margin-left: 0px;
+	font-size: 12px;
 }
 #sticker-content p.first {
 	width: 181px; 
@@ -397,9 +399,9 @@ p.header-description {
 	margin-bottom: 0px; 
 }
 .header .form-search button.amplifier-image-btn {
-    height: 20px;
-    left: -40px;
-    padding-top: 7px;
+    height: 23px;
+    left: -35px;
+    padding-top: 8px;
     position: relative;
     width: 25px;
 	background:none;
@@ -411,15 +413,15 @@ p.header-description {
 }
 .header .form-search {
 	position: relative;
-	width: 500px;
+	width: 560px;
 	right: 0px;
 	background-color: #465666;
 	border-radius: 5px;
 	padding: 5px;
-	height: 33px;
+	height: 31px;
 }
 .header .quick-access {
-	width: 900px;
+	width: 885px;
 }
 #search-input-form {
 	width: 520px;
@@ -441,19 +443,20 @@ p.header-description {
 	float: left; 
 }
 input#search {
-	font-size: 11px;
+	font-size: 12px;
 	width: 310px;
 	padding-left: 20px;
 	font-family: 'Conv_UniversLTStd BoldCn';
-	height: 27px;
+	height: 25px;
 	color: #425560;
 }
 select#search-select {
 	font-size: 11px;
 	font-family: 'Conv_UniversLTStd BoldCn';
-	height: 33px; 
+	height: 30px; 
 	color: #425560;
-	margin-top: -20px;
+	margin-top: -25px;
+	width: 195px;
 }
 #email-img {
 	padding-top: 3px;
@@ -841,4 +844,13 @@ div.tag-list div.tag {
 .products-list .desc {
 	height: 65px;
 	overflow:hidden;
+}
+.header .form-search input.input-text {
+	color: #425560 !important; 
+}
+.header .links li {
+	background: none; 
+}
+.catalogsearch-result-index .amplifier-image-btn {
+	width: 0px; 
 }
