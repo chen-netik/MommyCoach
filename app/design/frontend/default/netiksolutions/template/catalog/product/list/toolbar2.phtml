@@ -1,0 +1,13 @@
+<?php
+/**
+ * Netik 
+ * Chen Liang simple pagination 
+ *
+ */
+?>
+<?php if($this->getCollection()->getSize()): ?>
+    <div class="total-results">
+      <p class="number"><strong><?php echo $this->__('%s', $this->getTotalNum()) ?></strong></p>
+      <p>RESULTS</p>
+    </div>
+<?php endif ?>
