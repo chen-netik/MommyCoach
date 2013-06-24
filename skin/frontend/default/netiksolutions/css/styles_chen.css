@@ -199,7 +199,7 @@ div.home-landing #nav {
     width: 1000px;
 }
 .how-it-works-header {
-	margin-bottom: 80px;
+	margin-bottom: 60px;
 	text-align: left;
 	 padding-left: 50px;
 }
@@ -210,7 +210,7 @@ div.home-landing #nav {
 	background-image: url("../images/happy-moment-bg.png");
 	height: 400px;
     margin-bottom: 50px;
-    margin-top: 50px;
+    margin-top: 110px;
     padding-bottom: 100px;
     padding-top: 100px;
 	
@@ -287,12 +287,12 @@ div.home-landing #nav {
     padding-top: 80px;
 }
 p.header-description {
-    font-size: 15px;
+    font-size: 14px;
     letter-spacing: 0.5px;
-    line-height: 27px;
+    line-height: 23px;
     margin-top: 15px;
     width: 325px;
-	word-spacing: 6px; 
+	word-spacing: 5px; 
 	color: #C2C2C2;
 	margin-top: 0px;
 }
@@ -304,7 +304,7 @@ p.header-description {
 	
 }
 .logos img {
-	margin: 0 50px; 
+	margin: 0 40px; 
 }
 .header .logo {
 	margin-top: 0px; 
@@ -577,7 +577,7 @@ top: 10px;
 	margin-top: 5px;
 }
 .step-overlay h3 {
-	color: #475867;
+	color: #425560; 
 	font-size: 16px; 
 	font-family: 'Helveticaneue Thin';
 	margin-bottom: 40px;
@@ -585,9 +585,11 @@ top: 10px;
 	top: -10px; 
 }
 .step-overlay p {
-	color: #62615D; 
+	color: #425560; 
 	font-family: 'Verdana';
 	font-size:13px; 
+	width:234px;
+	margin: 0px 15px; 
 	text-align:justify;
 	
 }
