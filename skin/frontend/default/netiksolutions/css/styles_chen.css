@@ -175,7 +175,10 @@ div.home-landing #nav {
 	text-align: center;
 }
 .header .logo  img{
-	width: 175px; 
+	width: 195px; 
+}
+.header .logo {
+	margin: 0px; 
 }
 #how-it-works-id {
 	height: 400px; 
@@ -304,7 +307,7 @@ p.header-description {
 	margin: 0 50px; 
 }
 .header .logo {
-	margin-top: -2px; 
+	margin-top: 0px; 
 }
 .small-headline {
 	font-family: 'Conv_UniversLTStd BoldCn';
@@ -834,6 +837,6 @@ div.tag-list div.tag {
 		height: 25px; 
 }
 .products-list .desc {
-	height: 60px;
+	height: 65px;
 	overflow:hidden;
 }
