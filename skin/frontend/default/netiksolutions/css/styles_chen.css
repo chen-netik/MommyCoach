@@ -754,6 +754,8 @@ ol.currently li div.filter-li {
 div.total-results {
 width: 80px;
 float: right;
+position: relative; 
+top: -63px; 
 }
 .total-results p.number {
 	font-size: 20px;
@@ -920,4 +922,7 @@ div.review-wrapper div.ratings {
 
 div.review-wrapper  {
 	margin-top: 5px; 
+}
+.main {
+	padding: 35px 25px 80px; 
 }
