@@ -1,0 +1,23 @@
+<?php
+    $_product = $this->getProduct();
+    $_helper = $this->helper('catalog/output');
+?>
+<p class="product-image">
+    <?php
+        $_img = '<img src="'.$this->helper('catalog/image')->init($_product, 'image')->resize(270).'" alt="'.$this->htmlEscape($this->getImageLabel()).'" title="'.$this->htmlEscape($this->getImageLabel()).'" />';
+        echo $_helper->productAttribute($_product, $_img, 'image');
+    ?>
+</p>
+<div class="button-sets">
+	<div class="two-red-btns">
+		<button id="sche-btn" type="button" title="SCHEDULE A SESSION" class="button red-btn product-page-btn">
+	        	<span><span>SCHEDULE A SESSION</span></span>
+	    </button>
+	    <button id="email-btn" type="button" title="EMAIL" class="button red-btn product-page-btn">
+	        	<span><span>EMAIL</span></span>
+	    </button>
+	</div>
+	<div class="coach-share">
+		
+	</div> 
+</div>
