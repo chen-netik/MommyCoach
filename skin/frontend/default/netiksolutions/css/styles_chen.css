@@ -967,6 +967,8 @@ div.review-wrapper  {
 .product-view .product-img-box {
 	position: relative; 
 	top: -100px; 
+	width: 270px; 
+	border: 5px solid #FFF; 
 }
 .product-view .product-shop .product-name h1 {
 		font-family: 'Conv_UniversLTStd BoldCn';
