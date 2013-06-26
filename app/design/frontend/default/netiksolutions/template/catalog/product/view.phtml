@@ -38,10 +38,12 @@
 </script>
 
 	<div id="messages_product_view"><?php echo $this->getMessagesBlock()->getGroupedHtml() ?></div>
+<form action="<?php echo $this->getSubmitUrl($_product) ?>" method="post" id="product_addtocart_form"<?php if($_product->getOptions()): ?> enctype="multipart/form-data"<?php endif; ?>>
+	
 	<div class="product-view">
+	
 		<div class="product-view-wrapper">
 		    <div class="product-essential">
-		    <form action="<?php echo $this->getSubmitUrl($_product) ?>" method="post" id="product_addtocart_form"<?php if($_product->getOptions()): ?> enctype="multipart/form-data"<?php endif; ?>>
 		        <div class="no-display">
 		            <input type="hidden" name="product" value="<?php echo $_product->getId() ?>" />
 		            <input type="hidden" name="related_product" id="related-products-field" value="" />
@@ -90,7 +92,7 @@
 		                		<button class="blue-btn button"><span><span>$60/60min</span></span></button>
 		                		<button class="blue-btn button"><span><span>$90/90min</span></span></button>
 		            </div> 
-		            <?php echo $this->getChildHtml('other');?>
+		            <?php //echo $this->getChildHtml('other');?>
 		
 		            <?php if ($_product->isSaleable() && $this->hasOptions()):?>
 		                <?php echo $this->getChildChildHtml('container1', '', true, true) ?>
@@ -106,7 +108,7 @@
 		        <?php if ($_product->isSaleable() && $this->hasOptions()):?>
 		            <?php echo $this->getChildChildHtml('container2', '', true, true) ?>
 		        <?php endif;?>
-		    </form>
+
 		    <script type="text/javascript">
 		    //<![CDATA[
 		        var productAddToCartForm = new VarienForm('product_addtocart_form');
@@ -175,3 +177,4 @@
 			        </div>
 	    </div>
 	</div>
+</form>
