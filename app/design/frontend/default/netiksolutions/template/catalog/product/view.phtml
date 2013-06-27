@@ -87,6 +87,28 @@
 		                    <div class="std"><?php echo $_helper->productAttribute($_product, nl2br($_product->getShortDescription()), 'short_description') ?></div>
 		                </div>
 		            <?php endif;?>
+		            
+		            <div class="tag-list">
+	                    <?php 
+	                    $model=Mage::getModel('tag/tag');
+					    $tags= $model->getResourceCollection()
+					        ->addPopularity()
+					        ->addStatusFilter($model->getApprovedStatus())
+					        ->addProductFilter($_product->getId())
+					        ->setFlag('relation', true)
+					        ->addStoreFilter(Mage::app()->getStore()->getId())
+					        ->setActiveFilter()
+					        ->load();
+					
+					    if(isset($tags) && !empty($tags)):
+					        foreach($tags as $tag):
+					            echo '<div class="tag">'.$tag->getName().'</div>';
+					        endforeach;
+	    				endif;
+	    				?>
+	    			</div>
+	    			
+	    			
 					<div class="btns-wrapper">
 		                		<button class="blue-btn button"><span><span>$30/30min</span></span></button>
 		                		<button class="blue-btn button"><span><span>$60/60min</span></span></button>
@@ -171,7 +193,7 @@
 			            <?php echo $html; ?>
 			        </div>
 			<?php endforeach;?>
-			        <?php echo $this->getChildHtml('upsell_products') ?>
+			        <?php //echo $this->getChildHtml('upsell_products') ?>
 			        <div class="tabs-things-wrapper">
 			       	 <?php echo $this->getChildHtml('product_additional_data') ?>
 			        </div>

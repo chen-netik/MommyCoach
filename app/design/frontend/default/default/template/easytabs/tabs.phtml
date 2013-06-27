@@ -99,6 +99,7 @@ new EasyTabs('.tabs a');
 //Chen Liang 
 jQuery(document).ready(function(){
 	jQuery("#booking_order").css("display", "none"); 
+	jQuery(".video-more-views").css("display", "none"); 
 	
 });
 jQuery('ul.tabs').find("li").each(function() {
@@ -112,6 +113,14 @@ jQuery('ul.tabs').find("li").each(function() {
 	// alert("bbb");
 	    jQuery("#booking_order").css("display", "none"); 
 	}
+
+	if(jQuery("#product_tabs_cms").hasClass("active")){
+		//alert("aaa");
+		jQuery(".video-more-views").css("display", "block"); 
+	}else {
+		//alert("bbb");
+		jQuery(".video-more-views").css("display", "none"); 
+	}
 	});
-	});
+});
 </script> 

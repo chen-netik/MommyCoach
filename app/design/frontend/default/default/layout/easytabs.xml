@@ -39,6 +39,7 @@
                 <action method="addTab" translate="title" module="catalog" ifconfig="easy_tabs/customcms/tabcms3"><alias>cms3</alias><title>CMS tab</title><block>core/template</block><template>easytabs/catalogproductcms3.phtml</template></action>
                 <action method="addTab" translate="title" module="catalog" ifconfig="easy_tabs/customcms/tabcms4"><alias>cms4</alias><title>CMS tab</title><block>core/template</block><template>easytabs/catalogproductcms4.phtml</template></action>
             </block>
+			<block type="productvideo/catalog_product_view_video" name="product.info.media.video" as="video" after="-" template="productvideo/catalog/product/view/video.phtml" />
         </reference>
     </catalog_product_view>
 </layout>

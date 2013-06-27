@@ -1036,3 +1036,15 @@ background: url('../images/product-bkg.png') no-repeat;
 	margin-left: 2px; 
 	margin-right: 2px; 
 }
+ul#video-part li {
+	float: left; 
+	margin: 0 21px; 
+	height: 175px;
+}
+.video-more-views {
+	width: 985px; 
+	height: 300px;
+	text-align: center; 
+	margin: auto; 
+	
+}
