@@ -61,7 +61,7 @@
 		            <?php echo $this->getReviewsSummaryHtml($_product, false, true)?>
 		            <?php echo $this->getChildHtml('alert_urls') ?>
 		            <?php echo $this->getChildHtml('product_type_data') ?>
-		            <?php echo $this->getTierPriceHtml() ?>
+		            <?php //echo $this->getTierPriceHtml() ?>
 		            <?php echo $this->getChildHtml('extrahint') ?>
 		
 		            <?php if (!$this->hasOptions()):?>
@@ -85,29 +85,44 @@
 		                <div class="short-description">
 		                   
 		                    <div class="std"><?php echo $_helper->productAttribute($_product, nl2br($_product->getShortDescription()), 'short_description') ?></div>
+		                    <div class="tag-list" title="This is my div's tooltip message!">
+			                    <?php 
+			                    $model=Mage::getModel('tag/tag');
+							    $tags= $model->getResourceCollection()
+							        ->addPopularity()
+							        ->addStatusFilter($model->getApprovedStatus())
+							        ->addProductFilter($_product->getId())
+							        ->setFlag('relation', true)
+							        ->addStoreFilter(Mage::app()->getStore()->getId())
+							        ->setActiveFilter()
+							        ->load();
+							
+							    if(isset($tags) && !empty($tags)):
+							        foreach($tags as $tag):
+							            echo '<div class="tag">'.$tag->getName().'</div>';
+							        endforeach;
+			    				endif;
+			    				?>
+			    			</div>
 		                </div>
 		            <?php endif;?>
-		            
-		            <div class="tag-list">
-	                    <?php 
-	                    $model=Mage::getModel('tag/tag');
-					    $tags= $model->getResourceCollection()
-					        ->addPopularity()
-					        ->addStatusFilter($model->getApprovedStatus())
-					        ->addProductFilter($_product->getId())
-					        ->setFlag('relation', true)
-					        ->addStoreFilter(Mage::app()->getStore()->getId())
-					        ->setActiveFilter()
-					        ->load();
-					
-					    if(isset($tags) && !empty($tags)):
-					        foreach($tags as $tag):
-					            echo '<div class="tag">'.$tag->getName().'</div>';
-					        endforeach;
-	    				endif;
-	    				?>
-	    			</div>
-	    			
+		            <div style="display: none;">
+			            <a href="#" id="blob" class="btn large primary" rel="popover" data-content="And here's some amazing content. It's very engaging. right?" data-original-title="A title">hover for popover</a>
+	</a>
+			            <a href="#" id="view-more-click" rel="popover" data-content="This is the body of Popover" data-original-title="Creativity">View More</a>
+	    				<a href="#" id="example" class="btn btn-success" rel="popover" data-original-title="">hover for popover</a>
+    							
+    				</div>
+    			 <script type="text/javascript">
+    							// $.noConflict();
+    							// $("#blob").popover({offset: 10});
+
+    							// $(function ()
+    							// { $("#example").popover({title: 'Twitter Bootstrap Popover', content: "It's so simple to create a tooltop for my website!"});
+    							// });
+    							     							 
+							</script>  
+							
 	    			
 					<div class="btns-wrapper">
 		                		<button class="blue-btn button"><span><span>$30/30min</span></span></button>
@@ -200,3 +215,4 @@
 	    </div>
 	</div>
 </form>
+
