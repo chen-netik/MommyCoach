@@ -61,7 +61,20 @@
 				?>
 				<input id="hide-input" value="<?php echo $fbUserId; ?>" style="display: none; " />
 				<img id="fb-profile-image" src="https://graph.facebook.com/<?php echo $fbUserId; ?>/picture" <?php echo $showHide;?> />
-	           	<p class="welcome-msg"><?php echo $this->getWelcome() ?> <?php echo $this->getAdditionalHtml() ?></p>
+	           	<div class="hi-message">
+	           	<p class="welcome-msg" id="hi-message"><?php echo $this->getWelcome() ?> <?php echo $this->getAdditionalHtml() ?></p>
+		           	<div class="cl_tooltip popover fade bottom in" style="display:none;">
+		           		<div class="arrow"></div>
+		           		<div class="popover-content">
+			           	  <div id="cl_profile">
+						     <a href="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_WEB);?>customer/account/">PROFILES</a>
+						  </div>
+						  <div id="cl_logout">
+						 	 <a href="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_WEB);?>customer/account/logout">LOGOUT</a>
+						  </div>
+						  </div>
+					</div>
+				</div>
 	           	<?php if ($this->helper('customer')->isLoggedIn() ):?>
 			     <?php else:?>
 			     <div style="margin-top: -5px; width: 122px; " >
@@ -110,4 +123,15 @@
           });
 
 	    	
+</script>
+<script type="text/javascript">
+	jQuery(".hi-message").hover(function(){
+		jQuery(".cl_tooltip").css("display", "block"); 
+
+		},
+		function () {
+		jQuery(".cl_tooltip").css("display", "none"); 
+			});
+//jQuery("#hi-message").tooltip({ effect: 'slide'});
+
 </script>
