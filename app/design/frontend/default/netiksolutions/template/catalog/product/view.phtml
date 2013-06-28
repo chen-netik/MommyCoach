@@ -215,4 +215,19 @@
 	    </div>
 	</div>
 </form>
-
+<script type="text/javascript">
+jQuery(document).ready(function(){
+jQuery('#sche-btn').on('click', function() {
+    //alert(jQuery(this).text());
+    jQuery("#product_tabs_description_tabbed").removeClass("active");
+    jQuery('#product_tabs_cms1').addClass("active"); 
+    jQuery('#product_tabs_cms').removeClass("active"); 
+    jQuery('#product_tabs_review_tabbed').removeClass("active"); 
+    //alert("aa");
+    jQuery("#booking_order").css("display", "block"); 
+    jQuery("#video-more-views").css("display", "none"); 
+    jQuery("#product_tabs_description_tabbed_contents").css("display", "none");
+    jQuery("#product_tabs_review_tabbed_contents").css("display", "none"); 
+  });
+}); 
+</script>

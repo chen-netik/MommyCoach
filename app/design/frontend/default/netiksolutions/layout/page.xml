@@ -74,7 +74,7 @@ Default layout, loads most of the pages
 				<!--action method="addCss"><stylesheet>css/twitter.css</stylesheet></action-->                     
 				<action method="addCss"><stylesheet>css/styles_jacob.css</stylesheet></action>
 				<!--action method="addCss"><stylesheet>css/tooltipster/tooltipster.css</stylesheet></action-->
-				<action method="addCss"><stylesheet>css/bootstrap.css</stylesheet></action>
+				<!--action method="addCss"><stylesheet>css/bootstrap.css</stylesheet></action-->
 				
 				<action method="addItem"><type>js_css</type><name>jqueryui/jquery.ui.all.css</name><params/></action>
 			
