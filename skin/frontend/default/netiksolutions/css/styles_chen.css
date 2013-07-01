@@ -679,12 +679,14 @@ a {
 	width: 90px; 
 }
 .f-fix {
-	width: 78%; 
+	width: 410px;
+	margin-left: 40px;
 	margin-top:11px;
 }
 
 .list-right {
-	width: 20%;
+	width: 125px;
+ 
 	float: right; 
 }
 button.blue-btn {
@@ -708,14 +710,14 @@ button.blue-btn span span {
 #mini-search-input-form {
 	margin-bottom: 30px;
 	padding-bottom:15px;
-	border-bottom: 1px solid #DBD8D3;
+	border-bottom: 1px solid #D0CCC7;
 }
 form#search_mini_form2 input#mini-search {
 	width: 145px;
 	padding-left: 15px;
 	height: 30px;
 	border-radius: 5px;
-	height: 45px;
+	height: 48px;
 }
 form#search_mini_form2 div.form-search {
 	width: 240px;
@@ -729,14 +731,14 @@ form#search_mini_form2 button.amplifier-image-btn span{
 	padding: 0px;
 }
 ol#products-list li {
-	
-	border: 1px solid #DBD8D3;
-	padding: 15px 20px;
+	height: 153px; 
+	border: 1px solid #D0CCC7;
+	padding: 15px 17px;
 	margin-bottom: 10px; 
 }
 ol#products-list li div.li-wrapper {
 	background-color: #F6F7F6;
-	min-height: 150px;
+	min-height: 153px;
 	padding: 0px 15px 0px 0px;
 }
 ol.currently li {
@@ -779,7 +781,7 @@ div.view-profile {
 	height: 35px; 
 	color: white; 
 	font-family: 'Conv_UniversLTStd BoldCn';
-	bottom: 20px;
+	bottom: 35px;
 }
 p.v-text {
 width: 90px;
@@ -799,7 +801,7 @@ p.v-right {
 }
 div.view-profile-2 {
 	position: relative;
-	bottom: 55px;
+	bottom: 70px;
 	z-index: 100000; 
 	background: transparent;
 	height: 35px; 
@@ -808,15 +810,16 @@ div.view-profile-2 {
 }
 div.schedule-a-section {
 	position: relative;
-	top: -100px;
+	top: -115px;
 	z-index: 99999; 
 	background-color: #00C9F2;
-	height: 30px; 
+	height: 50px; 
 	color: white; 
 	font-family: 'Conv_UniversLTStd BoldCn';
 	margin: 0 auto;
 	width: 125px;
-	padding-top: 15px;
+	padding-top: 0px;
+	line-height: 50px; 
 }
 div.schedule-a-section p {
 	font-size: 11px;
@@ -853,7 +856,9 @@ div.schedule-a-section p {
 }
 #narrow-by-list dt {
 	color: #425560; 
-	font-size:11px;
+	font-size:12px;
+		font-family: 'Conv_UniversLTStd BoldCn';
+		padding-top: 0px; 
 }
 .block-layered-nav dd {
 	margin-bottom: 21px;
@@ -878,7 +883,7 @@ div.schedule-a-section p {
 	color: #425560; 
 }
 div.tag-list div.tag {
-	width: 70px; 
+	width: 86px; 
 	float: left; 
 	background-color: #425560; 
 	color: #FFF; 
@@ -913,8 +918,8 @@ font: 12px/16px Arial, Helvetica, sans-serif;
 	width: 1096px; 
 }
 .amshopby-filters-left {
-	border-right: 1px solid #DBD8D3;
-	width: 240px;
+	border-right: 1px solid #D0CCC7;
+	width: 200px;
 	min-height: 680px; 
 }
 .btn-remove {
@@ -926,6 +931,7 @@ div.review-wrapper div.ratings {
 
 div.review-wrapper  {
 	margin-top: 5px; 
+	min-height: 35px; 
 }
 .main {
 	padding: 35px 25px 80px; 
@@ -1138,4 +1144,32 @@ div.hi-message {
 }
 .cl_tooltip #cl_logout a {
 	text-decoration: none; 
+}
+.products-list .product-image {
+	width: 153px; 
+	height: 153px; 
+}
+.f-fix h2.product-name, .f-fix div.desc {
+	width: 390px; 
+}
+.btns-wrapper button.blue-btn {
+	width: 125px; 
+}
+.pager {
+	font-size: 11pt; 
+	font-family: 'Verdana'; 
+	
+}
+.catalogsearch-result-index .main {
+	padding-bottom: 10px; 
+	    padding-left: 5px;
+    padding-right: 5px;
+    width: 1038px;
+}
+#search_mini-form2 button.search-button {
+	width: 47px;
+	height: 32px; 
+}
+.page-title {
+	border-bottom: 1px solid #D0CCC7; 
 }

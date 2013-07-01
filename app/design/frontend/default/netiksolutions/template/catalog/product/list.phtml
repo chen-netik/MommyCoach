@@ -60,7 +60,7 @@
         	<div class="li-wrapper">
             <?php // Product Image ?>
             <a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true) ?>" class="product-image">
-           		 <img src="<?php echo $this->helper('catalog/image')->init($_product, 'small_image')->resize(135); ?>" width="135" height="135" alt="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true) ?>" />
+           		 <img src="<?php echo $this->helper('catalog/image')->init($_product, 'small_image')->resize(153); ?>" width="153" height="153" alt="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true) ?>" />
             	<div class="schedule-a-section" style="display: none; ">
             		<p>SCHEDULE A SESSION</p>
             	</div>
@@ -183,13 +183,13 @@ jQuery(".product-image").each(function() {
 	jQuery(this).on({
 		mouseenter: function() {
 			jQuery(this).find(".schedule-a-section").css("display", "block");
-			jQuery(this).find(".view-profile").css("bottom", "65px");
-			jQuery(this).find(".view-profile-2").css("bottom", "100px");		
+			jQuery(this).find(".view-profile").css("bottom", "85px");
+			jQuery(this).find(".view-profile-2").css("bottom", "120px");		
 		}, 
 		mouseleave: function() {
 			jQuery(this).find(".schedule-a-section").css("display", "none");
-			jQuery(this).find(".view-profile").css("bottom", "20px");
-			jQuery(this).find(".view-profile-2").css("bottom", "55px");
+			jQuery(this).find(".view-profile").css("bottom", "35px");
+			jQuery(this).find(".view-profile-2").css("bottom", "70px");
 		}
 		});
 	});
