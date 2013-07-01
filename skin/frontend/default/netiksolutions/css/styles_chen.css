@@ -71,7 +71,7 @@ button.red-btn span {
 	font-family: 'Conv_UniversLTStd BoldCn';
 }
 button.product-page-btn span {
-	width: 105px; 
+	width: 110px; 
 }
 .header-container {
 	height: 65px;
@@ -954,6 +954,8 @@ div.review-wrapper  {
 	margin-right: 15px; 
 	float: left; 
 	background: none; 
+	margin-top: 0px; 
+	padding-top: 10px; 
 }
 .catalog-product-view .btns-wrapper {
 	width: 160px; 
@@ -1155,6 +1157,10 @@ div.hi-message {
 .btns-wrapper button.blue-btn {
 	width: 125px; 
 }
+.catalog-product-view .btns-wrapper button.blue-btn {
+	width: 140px; 
+	text-align: right;
+}
 .pager {
 	font-size: 11pt; 
 	font-family: 'Verdana'; 
@@ -1172,4 +1178,14 @@ div.hi-message {
 }
 .page-title {
 	border-bottom: 1px solid #D0CCC7; 
+}
+.ratings .rating-links a {
+	display: none; 
+}
+.short-description div.std {
+	min-height: 110px; 
+	width: 515px; 
+}
+.catalog-product-view .ratings .rating-box {
+	float: right; 
 }

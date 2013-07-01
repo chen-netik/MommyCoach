@@ -125,9 +125,15 @@
 							
 	    			
 					<div class="btns-wrapper">
-		                		<button class="blue-btn button"><span><span>$30/30min</span></span></button>
-		                		<button class="blue-btn button"><span><span>$60/60min</span></span></button>
-		                		<button class="blue-btn button"><span><span>$90/90min</span></span></button>
+						<?php if ($_product->getData('rate_30m')!=NULL):?>
+		                		<button class="blue-btn button"><span><span><?php echo $_product->getData('rate_30m')?>/30min</span></span></button>
+		                <?php endif;?>
+		                <?php if ($_product->getData('rate_60m')!=NULL):?>
+		                		<button class="blue-btn button"><span><span><?php echo $_product->getData('rate_60m')?>/60min</span></span></button>
+		                <?php endif;?>
+		                <?php if ($_product->getData('rate_90m')!=NULL):?>
+		                		<button class="blue-btn button"><span><span><?php echo $_product->getData('rate_90m')?>/90min</span></span></button>
+		                <?php endif;?>
 		            </div> 
 		            <?php //echo $this->getChildHtml('other');?>
 		

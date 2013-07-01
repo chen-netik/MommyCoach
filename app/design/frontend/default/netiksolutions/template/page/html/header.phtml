@@ -63,6 +63,7 @@
 				<img id="fb-profile-image" src="https://graph.facebook.com/<?php echo $fbUserId; ?>/picture" <?php echo $showHide;?> />
 	           	<div class="hi-message">
 	           	<p class="welcome-msg" id="hi-message"><?php echo $this->getWelcome() ?> <?php echo $this->getAdditionalHtml() ?></p>
+	           	<?php if ($this->helper('customer')->isLoggedIn() ): ?>
 		           	<div class="cl_tooltip popover fade bottom in" style="display:none;">
 		           		<div class="arrow"></div>
 		           		<div class="popover-content">
@@ -74,6 +75,8 @@
 						  </div>
 						  </div>
 					</div>
+				<?php else:?>
+				<?php endif;?>
 				</div>
 	           	<?php if ($this->helper('customer')->isLoggedIn() ):?>
 			     <?php else:?>
