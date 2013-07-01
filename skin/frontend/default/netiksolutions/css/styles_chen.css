@@ -1189,3 +1189,6 @@ div.hi-message {
 .catalog-product-view .ratings .rating-box {
 	float: right; 
 }
+p.no-rating a {
+	display: none; 
+}

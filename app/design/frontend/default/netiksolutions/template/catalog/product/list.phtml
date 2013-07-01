@@ -118,10 +118,17 @@
                     <?php echo $this->getReviewsSummaryHtml($_product) ?>
                     <?php endif; ?>
                 	</div>
+                	<?php $currentProduct = Mage::getModel('catalog/product')->load($_product->getId());?>
                 	<div class="btns-wrapper">
-                		<button class="blue-btn button"><span><span>$30/30min</span></span></button>
-                		<button class="blue-btn button"><span><span>$60/60min</span></span></button>
-                		<button class="blue-btn button"><span><span>$90/90min</span></span></button>
+						<?php if ($currentProduct->getData('rate_30m')!=NULL):?>
+		                		<button class="blue-btn button"><span><span><?php echo $currentProduct->getData('rate_30m')?>/30min</span></span></button>
+		                <?php endif;?>
+		                <?php if ($currentProduct->getData('rate_60m')!=NULL):?>
+		                		<button class="blue-btn button"><span><span><?php echo $currentProduct->getData('rate_60m')?>/60min</span></span></button>
+		                <?php endif;?>
+		                <?php if ($currentProduct->getData('rate_90m')!=NULL):?>
+		                		<button class="blue-btn button"><span><span><?php echo $currentProduct->getData('rate_90m')?>/90min</span></span></button>
+		                <?php endif;?>
                 	</div> 
                 </div> 
             </div>
