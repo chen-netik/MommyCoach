@@ -6,6 +6,10 @@
 	font-weight: normal;
 	font-style: normal;
 }
+@font-face {
+	font-family: 'Univers Thin';
+	src: url("fonts/UniversLTStd-ThinUltraCn.otf") format("opentype");
+}
 
 @font-face {
 	font-family: 'Helveticaneue';
@@ -512,17 +516,18 @@ select#search-select {
 	text-align: left;
 }
 #search-bar-above-slide h1 {
-	font-size: 40px; 
+	font-size: 41px; 
 	text-transform: uppercase; 
 	color: #FFF;
 	font-family: 'Conv_UniversLTStd BoldCn';
 	
 }
 #search-bar-above-slide h3 {
-	font-size: 16px; 
+	margin-top: -20px; 
+	font-size: 30pt; 
 	text-transform: uppercase; 
 	color: #FFF;
-	font-family: 'Conv_UniversLTStd BoldCn';
+	font-family: 'Univers Thin';
 	/*font-family: 'Univers Ultra Thin';*/
 	font-weight: normal;
 	margin-bottom: 21px; 
