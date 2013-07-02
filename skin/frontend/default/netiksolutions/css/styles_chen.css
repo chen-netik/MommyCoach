@@ -1197,3 +1197,55 @@ div.hi-message {
 p.no-rating a {
 	display: none; 
 }
+/****** MOMMY PROFILE ******/ 
+
+.cms-mommy-profile .product-view .tabs li {
+	background: url('../images/unselected-tab-small.png') no-repeat;
+	width: 205px;
+	margin-left: 3px; 
+}
+.cms-mommy-profile .std ul {
+	list-style: none !important; 
+	margin-left: 0px;
+	padding-left: 0px;
+}
+.cms-mommy-profile .product-view .tabs li.active a, .cms-mommy-profile .product-view .tabs li.active a:hover {
+	background: url('../images/selected-small.png') no-repeat;
+	background-position-x: 4px;
+	padding-left: 0px; 
+	padding-right: 0px; 
+}
+.cms-mommy-profile .breadcrumbs {
+	display: none; 
+}
+.cms-mommy-profile .main {
+
+	width: 100% !important;
+	margin-left: 0px; 
+	padding-left: 0px; 
+	margin-top: 0px;
+	padding-top: 0px; 
+	padding-bottom: 0px; 
+}
+.cms-mommy-profile .product-essential {
+	margin: 0 auto; 
+	width: 997px; 
+}
+.cms-mommy-profile .main-container {
+	background-color: #D7D7D7; 
+}
+.cms-mommy-profile .product-view-wrapper {
+	width: 1096px;
+	margin: 0 auto; 
+	padding-top: 150px;
+		background: url('../images/family-happy.jpg') no-repeat; 
+	
+	
+}
+.cms-mommy-profile .product-collateral {
+	background-color: #FFF; 
+	min-height: 750px; 
+}
+.cms-mommy-profile .product-view .product-shop .product-name {
+	width: 700px; 
+}
