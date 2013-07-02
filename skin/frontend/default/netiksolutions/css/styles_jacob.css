@@ -30,9 +30,12 @@
 	float: left;
 }
 .footer-top-div div.footer-top-section {
-	width: 190px;
+	width: 350px;
 	float: left; 
 	margin: 25px 50px; 
+}
+div.footer-top-div div.footer-top-div-4 {
+	display: none; 
 }
 .footer .footer-top-div li {
 	display: block;
