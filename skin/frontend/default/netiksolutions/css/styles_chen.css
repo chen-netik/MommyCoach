@@ -807,7 +807,7 @@ p.v-right {
 div.view-profile-2 {
 	position: relative;
 	bottom: 70px;
-	z-index: 100000; 
+	z-index: 1000; 
 	background: transparent;
 	height: 35px; 
 	color: white; 
@@ -834,10 +834,20 @@ div.schedule-a-section p {
 .products-list .product-name a {
 	text-decoration: none; 
 }
+.product-view .product-shop .price-box {
+	display: none;
+}
+
 .products-list .product-name {
 	color: #425560; 
 	font-family: 'Conv_UniversLTStd BoldCn';
 	text-transform: uppercase;
+}
+.catalog-product-view .add-to-box {
+	display: none; 
+}
+.product-view .product-shop .availability {
+	display: none;
 }
 .catalogsearch-result-index .rating-links a {
 	display: none; 
