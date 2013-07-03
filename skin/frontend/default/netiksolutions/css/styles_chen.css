@@ -705,7 +705,7 @@ button.blue-btn span {
 }
 
 button.blue-btn span span {
-	width: 96px; 
+	/*width: 96px; */
 	font-family: 'Verdana';
 	font-size: 11px; 
 }
