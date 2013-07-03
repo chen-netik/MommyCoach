@@ -124,7 +124,7 @@
 		                		<button class="blue-btn button"><span><span><?php echo $currentProduct->getData('rate_30m')?>/30min</span></span></button>
 		                <?php endif;?>
 		                <?php if ($currentProduct->getData('rate_60m')!=NULL):?>
-		                		<button class="blue-btn button"><span><span><?php echo $currentProduct->getData('rate_60m')?>/60min</span></span></button>
+		                		<button class="blue-btn button"><span><span>$<?php echo $currentProduct->getData('rate_60m')?>/60min</span></span></button>
 		                <?php endif;?>
 		                <?php if ($currentProduct->getData('rate_90m')!=NULL):?>
 		                		<button class="blue-btn button"><span><span><?php echo $currentProduct->getData('rate_90m')?>/90min</span></span></button>
